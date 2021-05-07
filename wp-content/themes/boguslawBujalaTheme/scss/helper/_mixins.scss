@@ -1,0 +1,49 @@
+//@include transform-transX(100);
+@mixin media-maxw-350{
+	@media only screen and (max-width: 350px){ @content; }
+}
+@mixin media-maxw-767{
+	@media only screen and (max-width: 767px){ @content; }
+}
+@mixin media-minw-768{
+	@media only screen and (min-width: 768px){ @content; }
+}
+@mixin media-maxw-991{
+	@media only screen and (max-width: 991px){ @content; }
+}
+@mixin media-minw-992{
+	@media only screen and (min-width: 992px){ @content; }
+}
+@mixin media-maxw-1199{
+	@media only screen and (max-width: 1199px){ @content; }
+}
+@mixin media-minw-1200{
+	@media only screen and (min-width: 1200px){ @content; }
+}
+@mixin media-maxw-1440 {
+	@media only screen and (max-width: 1440px){ @content; }
+}
+@mixin media-minw-1441 {
+	@media only screen and (min-width: 1441px){ @content; }
+}
+@mixin media-maxw-1500 {
+	@media only screen and (max-width: 1500px){ @content; }
+}
+@mixin media-maxw-1650 {
+	@media only screen and (max-width: 1650px){ @content; }
+}
+@mixin media-minw-1651 {
+	@media only screen and (min-width: 1651px){ @content; }
+}
+@mixin media-minw-992-maxw-1440{
+	@media only screen and (min-width: 992px) and (max-width: 1440px){ @content; }
+}
+@mixin media-minw-992-maxw-1366{
+	@media only screen and (min-width: 992px) and (max-width: 1366px){ @content; }
+}
+@mixin media-minw-992-maxw-1280{
+	@media only screen and (min-width: 992px) and (max-width: 1280px){ @content; }
+}
+@mixin media-minw-992-maxw-1152{
+	@media only screen and (min-width: 992px) and (max-width: 1152px){ @content; }
+}

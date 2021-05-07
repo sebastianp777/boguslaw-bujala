@@ -1,0 +1,15 @@
+29-04-2021 13:30:53 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 13:35:12 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 13:37:21 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status C
+29-04-2021 13:40:24 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status C
+29-04-2021 13:41:47 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status C
+29-04-2021 13:42:38 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status C
+29-04-2021 13:44:18 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status C
+29-04-2021 13:45:30 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 13:46:35 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - Subscription of an address with status S
+29-04-2021 14:01:43 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 14:03:46 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 14:04:39 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 14:06:07 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 14:08:29 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber
+29-04-2021 14:21:08 - INFO  - v: 7.1.4 - m: 37,9 MB, u: 1 - New subscriber

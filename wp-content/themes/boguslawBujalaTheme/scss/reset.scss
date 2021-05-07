@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    Presetting
+\*------------------------------------*/
+
+*,
+*:after,
+*:before {
+	margin:0;
+	list-style:none;
+	text-decoration:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+}
+
+html,body {
+	font-family: "akagi-pro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	overflow-x: hidden;
+	margin: 0 auto;
+	position: relative;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+img{
+	max-width: 100%;
+}
+
+a:focus {
+    outline: unset;
+}
