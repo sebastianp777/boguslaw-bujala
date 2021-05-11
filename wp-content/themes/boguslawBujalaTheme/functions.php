@@ -651,3 +651,60 @@ function latest_post($atts = []) {
 add_shortcode('lastest-post', 'latest_post');
 
 
+//Gutenberg color pallete customize
+add_theme_support( 'editor-color-palette', array(
+    array(
+        'name' => esc_attr__( 'white', 'themeLangDomain' ),
+        'slug' => 'white',
+        'color' => '#fff',
+    ),
+    array(
+        'name' => esc_attr__( 'almost white', 'themeLangDomain' ),
+        'slug' => 'almost-white',
+        'color' => '#fcfcfc',
+    ),
+    array(
+        'name' => esc_attr__( 'light grayish purple', 'themeLangDomain' ),
+        'slug' => 'light-grayish-purple',
+        'color' => '#6D6875',
+    ),
+    // array(
+    //     'name' => esc_attr__( 'grayish purple', 'themeLangDomain' ),
+    //     'slug' => 'grayish-purple',
+    //     'color' => '#716d77',
+    // ),
+    array(
+        'name' => esc_attr__( 'purple', 'themeLangDomain' ),
+        'slug' => 'purple',
+        'color' => '#3f187e',
+    ),
+    array(
+        'name' => esc_attr__( 'light gray', 'themeLangDomain' ),
+        'slug' => 'light-gray',
+        'color' => '#dedede',
+    ),
+    array(
+        'name' => esc_attr__( 'gray', 'themeLangDomain' ),
+        'slug' => 'gray',
+        'color' => '#555',
+    ),
+    array(
+        'name' => esc_attr__( 'dark gray', 'themeLangDomain' ),
+        'slug' => 'dark-gray',
+        'color' => '#4a4a4a',
+    ),
+    array(
+        'name' => esc_attr__( 'black', 'themeLangDomain' ),
+        'slug' => 'black',
+        'color' => '#000',
+    ),
+) );
+
+/**
+ * Register support for Gutenberg wide images in your theme
+ */
+function mytheme_setup() {
+    add_theme_support( 'align-wide' );
+  }
+  add_action( 'after_setup_theme', 'mytheme_setup' );
+
