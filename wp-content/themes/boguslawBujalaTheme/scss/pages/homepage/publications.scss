@@ -1,10 +1,23 @@
 .homepage__publications {
   padding: 100px 0;
+  position: relative;
   h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
+  }
+  .swiper-button-prev-custom-our, .swiper-button-next-custom-our{
+    position: absolute;
+    top: 51%;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .swiper-button-prev-custom-our{
+    left: 50px;
+  }
+  .swiper-button-next-custom-our{
+    right: 50px;
   }
 }

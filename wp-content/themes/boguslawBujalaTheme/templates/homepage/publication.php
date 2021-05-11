@@ -17,7 +17,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                 <?php $i=1; foreach ($getPublications as $getPublications):?>
-                    <?php $img = get_field('publications_image', $getPublications); ?>
+                    <?php $img = get_field('homepage_publications_image', $getPublications); ?>
                     <div class="swiper-slide">
                         <div class="swiper-border-partners">
                             <?php if($img):
@@ -31,10 +31,8 @@
             </div>
         <?php endif; ?>
     </div>
+    <div class="swiper-navigation">
+        <div class="swiper-button-prev-custom-our"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/ionic-arrow-dropleft.svg" alt=""></div>
+        <div class="swiper-button-next-custom-our"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/ionic-arrow-dropright.svg" alt=""></div>
+    </div>
 </section>
-
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>

@@ -1,21 +1,22 @@
 .btn{
-    border: 1px solid #293341;
+    border: 1px solid #4A4A4A;
     line-height: 38px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #293341;
-    padding: 16px 98px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 70px;
+    border-radius: 10px;
+    color: #4A4A4A;
     &:hover{
         color: #fff;
-        background: #293341;
+        background: #4A4A4A;
     }
 }
 
 .container{
-  max-width: 1780px;
+  max-width: 1530px;
   margin: 0 auto;
   position: relative;
   padding: 0 15px;

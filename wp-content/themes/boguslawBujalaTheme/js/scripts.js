@@ -42,6 +42,10 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next-custom-our',
+        prevEl: '.swiper-button-prev-custom-our',
+      },
       autoplay: {
         delay: 4000,
       },
@@ -61,3 +65,4 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
     },
 
   });
+

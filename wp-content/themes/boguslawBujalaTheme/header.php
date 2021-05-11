@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/dtd5rfz.css">
 
+
     <?php wp_head(); ?>
 
 </head>
