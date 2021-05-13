@@ -2,6 +2,8 @@
 
 	<main role="main">
 		<!-- section -->
+		<?= get_template_part('inc/hero__section--global'); ?>
+
 		<section class="default-page">
 				<div class="container-sm">
 

@@ -41,7 +41,7 @@
         <a href="<?php echo home_url(); ?>" class="nav__logo-link"><img class="nav__logo" src="<?php echo get_template_directory_uri().'/img/logo.svg'; ?>" alt=""></a>
         <span class="nav__wrapper__br"></span>
         <div class="nav__menu">
-            <?php echo html5blank_nav(); ?>
+        <?php echo html5blank_nav(); ?>
         </div>
     </div>
 </header>

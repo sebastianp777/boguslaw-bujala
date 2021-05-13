@@ -1,4 +1,4 @@
-<?php $homepage_background_image = get_field('home_page_hero_image_photo');
+<?php $homepage_background_image = get_field('home_page_hero_image_photo', 15);
     if ( $homepage_background_image ) :
     $url = wp_get_attachment_image_url($homepage_background_image, 'full');?>
 <?php endif; ?>

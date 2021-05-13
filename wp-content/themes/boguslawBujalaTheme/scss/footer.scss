@@ -1,3 +1,70 @@
 .footer {
-
+    margin-top: 140px;
+    background: #DEDEDE;
+    padding: 140px 0 60px;
+    .container-footer__div{
+        padding: 0 50px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 46px;
+        color: #4A4A4A;
+        margin-bottom: 80px;
+    }
+    .footer_text{
+        max-width: 875px;
+        margin-left: auto;
+        p{
+            font-size: 30px;
+            line-height: 46px;
+            color: #4A4A4A;
+        }
+    }
+    .footer-menu--div{
+        margin-top: 90px;
+        background: #707070;
+        border-top-left-radius: 85px;
+        border-top-right-radius: 85px;
+        border-bottom-left-radius: 85px;
+        border-bottom-right-radius: 85px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        a{
+            color: #fff;
+        }
+        .row{
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            span{
+                &:first-child{
+                    padding-left: 50px;
+                }
+                &:last-child{
+                    padding-right: 50px;
+                    text-transform: initial;
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: url('img/material-mail.svg');
+                        margin-right: 15px;
+                        margin-bottom: -6px;
+                    }
+                }
+            }
+        }
+        #menu-footer-menu{
+            display: flex;
+            max-width: 710px;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
 }

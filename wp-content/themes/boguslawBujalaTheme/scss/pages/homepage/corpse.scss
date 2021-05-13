@@ -1,0 +1,22 @@
+.homepage__corpse{
+  padding-top: 150px;
+  display: block;
+  .text-inner{
+    padding-left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    h2{
+      font-weight: bold;
+      line-height: 58px;
+      color: #4A4A4A;
+      text-transform: uppercase;
+    }
+    p{
+      font-size: 30px;
+      line-height: 46px;
+      color: #4A4A4A;
+    }
+  }
+}

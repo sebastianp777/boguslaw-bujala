@@ -1,0 +1,126 @@
+.audio-video__section{
+  .audio-video-hero-image{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    position: absolute;
+    background-color: #ecf0f5;
+    right: 0;
+    top: 0;
+    height: 1380px;
+    width: 100%;
+    z-index: -2;
+  }
+  .video__div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 145px;
+    .embed-container{
+      height: 450px;
+      iframe{
+        width: 790px;
+        height: 450px;
+      }
+    }
+    &__description{
+      height: 450px;
+      display: flex;
+      align-items: center;
+      width: 830px;
+      .btn{
+        margin-top: 50px;
+        background: #FFFFFF;
+        color: #555555;
+        border: 1px solid #FFFFFF;
+        display: inline-block;
+        &:hover{
+          background: #555555;
+          color: #fff;
+          border: 1px solid #555555;
+        }
+      }
+      P{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 53px;
+      }
+    }
+    &:nth-child(odd){
+      .video__div__description{
+        background: rgba(113, 109, 119, 0.9);
+        padding-right: 90px;
+        justify-content: flex-end;
+        .btn{
+          float: right;
+        }
+
+        p{
+          color: #fff;
+          text-align: right;
+        }
+      }
+    }
+
+    &:nth-child(2n+2){
+      flex-direction: row-reverse;
+      .video__div__description{
+        background: #DEDEDE;
+        padding-left: 90px;
+        justify-content: flex-start;
+
+        p{
+          color: #707070;
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__inner{
+    margin-top: 500px;
+  }
+.audio__div{
+  img{
+    filter: grayscale(100%);
+  }
+  .audio-with-text{
+    padding-left: 140px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .audio-description{
+      p{
+        color: #4A4A4A;
+        font-size: 40px;
+        line-height: 53px;
+        font-weight: 600;
+      }
+    }
+  }
+  .player--div-gb{
+    padding: 0;
+    .player-wrapper{
+      width: 100%;
+      max-width: 100%;
+      #controls{
+        justify-content: space-between;
+      }
+      .controls{
+        &--play-mid{
+          display: flex;
+          align-items: center;
+        }
+        &--volum-r{
+          display: flex;
+          align-items: center;
+          #volume{
+            margin-top: -5px;
+            margin-left: -7px;
+          }
+        }
+      }
+    }
+  }
+}
+}

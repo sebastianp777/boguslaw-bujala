@@ -1,0 +1,53 @@
+.hero-section--global{
+  .hero-section--text-div{
+    top: 32%!important;
+    .hero-section--text-div--p{
+      ul{
+        padding-inline-start: 5px;
+        li{
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          font-size: 30px;
+          position: relative;
+          &::before{
+            content: url('img/feather-book-open.svg');
+            margin-right: 30px;
+            margin-bottom: -10px;
+          }
+        }
+      }
+    }
+    .row--global--default-page{
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -100px;
+      .img-with-button{
+        display: flex;
+        flex-direction: column;
+        img{
+          filter: grayscale(100%);
+        }
+        .btn{
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+          font-size: 30px;
+          color: #fff;
+          line-height: 40px;
+          padding: 0;
+          width: 100%;
+          height: 90px;
+          justify-content: center;
+          border-color: #fff;
+          text-transform: initial;
+          font-weight: 400;
+          &::before{
+            content: url('img/feather-book-open-big.svg');
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
