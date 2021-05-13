@@ -31,6 +31,72 @@ img {
 a:focus {
   outline: unset; }
 
+.poezja main {
+  margin-top: 5em; }
+
+.has-white-color {
+  color: #fff; }
+
+.has-almost-white-color {
+  color: #fcfcfc; }
+
+.has-light-grayish-purple-color {
+  color: #6D6875; }
+
+.has-grayish-purple-color {
+  color: #716d77; }
+
+.has-purple-color {
+  color: #3f187e; }
+
+.has-light-gray-color {
+  color: #dedede; }
+
+.has-gray-color {
+  color: #555; }
+
+.has-dark-gray-color {
+  color: #4a4a4a; }
+
+.has-black-color {
+  color: #000; }
+
+.has-white-background-color {
+  background-color: #fff; }
+
+.has-almost-white-background-color {
+  background-color: #fcfcfc; }
+
+.has-light-grayish-purple-background-color {
+  background-color: #6D6875; }
+
+.has-grayish-purple-background-color {
+  background-color: #716d77; }
+
+.has-purple-background-color {
+  background-color: #3f187e; }
+
+.has-light-gray-background-color {
+  background-color: #dedede; }
+
+.has-gray-background-color {
+  background-color: #555; }
+
+.has-dark-gray-background-color {
+  background-color: #4a4a4a; }
+
+.has-black-background-color {
+  background-color: #000; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #4a4a4a; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 58px; }
+
 .btn {
   border: 1px solid #4A4A4A;
   line-height: 38px;
@@ -874,80 +940,8 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: -5px;
         margin-left: -7px; }
 
-.has-white-color {
-  color: #fff; }
-
-.has-almost-white-color {
-  color: #fcfcfc; }
-
-.has-light-grayish-purple-color {
-  color: #6D6875; }
-
-.has-grayish-purple-color {
-  color: #716d77; }
-
-.has-purple-color {
-  color: #3f187e; }
-
-.has-light-gray-color {
-  color: #dedede; }
-
-.has-gray-color {
-  color: #555; }
-
-.has-dark-gray-color {
-  color: #4a4a4a; }
-
-.has-black-color {
-  color: #000; }
-
-.has-white-background-color {
-  background-color: #fff; }
-
-.has-almost-white-background-color {
-  background-color: #fcfcfc; }
-
-.has-light-grayish-purple-background-color {
-  background-color: #6D6875; }
-
-.has-grayish-purple-background-color {
-  background-color: #716d77; }
-
-.has-purple-background-color {
-  background-color: #3f187e; }
-
-.has-light-gray-background-color {
-  background-color: #dedede; }
-
-.has-gray-background-color {
-  background-color: #555; }
-
-.has-dark-gray-background-color {
-  background-color: #4a4a4a; }
-
-.has-black-background-color {
-  background-color: #000; }
-
-.entry-content .alignwide {
-  margin-left: -80px;
-  margin-right: -80px; }
-
-.entry-content .alignfull {
-  margin-left: calc( -100vw / 2 + 100% / 2 );
-  margin-right: calc( -100vw / 2 + 100% / 2 );
-  max-width: 100vw; }
-
-.alignfull img {
-  width: 100vw; }
-
-.align-right {
-  text-align: right; }
-
-.text-uppercase {
-  text-transform: uppercase; }
-
 body {
-  color: #1C1C1B; }
+  color: #4a4a4a; }
 
 p {
   font-size: 18px;
