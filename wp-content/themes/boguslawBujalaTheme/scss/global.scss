@@ -1,3 +1,65 @@
+// do testów
+.poezja main {
+    margin-top: 5em;
+}
+
+// colors
+
+
+
+.has-white-color {
+    color: $white;}
+.has-almost-white-color {
+    color: $almost-white;}
+.has-light-grayish-purple-color {
+    color: $light-grayish-purple;}
+.has-grayish-purple-color {
+    color: $grayish-purple;}
+.has-purple-color {
+    color: $purple;}
+.has-light-gray-color {
+    color: $light-gray;}
+.has-gray-color {
+    color: $gray;}
+.has-dark-gray-color {
+    color: $dark-gray;}
+.has-black-color {
+    color: $black;}
+
+.has-white-background-color {
+    background-color: $white;}
+.has-almost-white-background-color {
+    background-color: $almost-white;}
+.has-light-grayish-purple-background-color {
+    background-color: $light-grayish-purple;}
+.has-grayish-purple-background-color {
+    background-color: $grayish-purple;}
+.has-purple-background-color {
+    background-color: $purple;}
+.has-light-gray-background-color {
+    background-color: $light-gray;}
+.has-gray-background-color {
+    background-color: $gray;}
+.has-dark-gray-background-color {
+    background-color: $dark-gray;}
+.has-black-background-color {
+    background-color: $black;}
+//colors end
+
+//Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: $dark-gray;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 58px;
+}
+//end typography
+
+
 .btn{
     border: 1px solid #4A4A4A;
     line-height: 38px;

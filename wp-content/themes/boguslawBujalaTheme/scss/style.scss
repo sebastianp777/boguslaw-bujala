@@ -13,10 +13,11 @@
 @import "404";
 
 @import "pages/homepage/homepage";
-
+@import "pages/poetry/poetry";
 
 body{
     color: #1C1C1B;
+    color: $text-color; //inny kolor tekstu w projekcie jest?
 }
 p{
     font-size: 18px;
