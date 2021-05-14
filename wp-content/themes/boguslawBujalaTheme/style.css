@@ -31,9 +31,6 @@ img {
 a:focus {
   outline: unset; }
 
-.poezja main {
-  margin-top: 5em; }
-
 .has-white-color {
   color: #fff; }
 
@@ -603,14 +600,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline-start: 5px; }
     .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li {
       display: flex;
-      align-items: center;
       margin-bottom: 30px;
       font-size: 30px;
       position: relative; }
       .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li::before {
         content: url("img/feather-book-open.svg");
         margin-right: 30px;
-        margin-bottom: -10px; }
+        margin-bottom: -10px;
+        padding-top: 9px; }
   .hero-section--global .hero-section--text-div .row--global--default-page {
     align-items: center;
     justify-content: space-between;
@@ -965,67 +962,93 @@ h1, h2, h3, h4, h5, h6 {
 .page-template-template-audio-video-php .footer {
   padding: 100px 0 60px; }
 
-.contact__section {
-  background: #716D77;
-  padding-bottom: 80px; }
-  .contact__section h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    line-height: 53px;
-    font-weight: 400;
-    padding: 100px 0 50px;
-    text-transform: uppercase; }
-  .contact__section .wpcf7 {
-    max-width: 875px;
+.review__section {
+  padding-top: 140px; }
+  .review__section__inner--all {
+    max-width: 1330px;
     margin: 0 auto; }
-    .contact__section .wpcf7 label {
-      margin: 5px 0 40px;
-      font-size: 18px;
-      color: #fff;
-      display: block; }
-    .contact__section .wpcf7 .form-input {
-      width: 100%;
-      position: relative;
-      height: 60px;
-      padding: 10px 17px;
-      border-radius: 6px;
-      font-size: 16px;
-      line-height: 22px;
-      color: #000;
-      background-color: #fff; }
-      @media only screen and (max-width: 767px) {
-        .contact__section .wpcf7 .form-input {
-          height: 50px;
-          font-size: 14px; } }
-    .contact__section .wpcf7 .div-client-message textarea {
-      height: 140px; }
-    .contact__section .wpcf7 .form-submit {
-      border: 1px solid #4A4A4A;
-      color: #4A4A4A;
-      background-color: #fff;
-      font-size: 20px;
-      line-height: 27px;
-      text-transform: uppercase;
-      padding: 22px 5px;
+  .review__section__inner__div {
+    padding: 40px 0;
+    position: relative; }
+    .review__section__inner__div__text {
+      text-align: right;
+      padding-right: 140px; }
+      .review__section__inner__div__text h2 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 60px; }
+      .review__section__inner__div__text div p {
+        color: #fff;
+        font-size: 30px;
+        line-height: 45px; }
+      .review__section__inner__div__text a {
+        margin-top: 40px;
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #fff;
+        cursor: pointer; }
+        .review__section__inner__div__text a:hover {
+          border: 1px solid #555555; }
+    .review__section__inner__div img {
+      filter: grayscale(100%);
+      margin-top: -90px;
+      margin-bottom: 20px; }
+    .review__section__inner__div--add {
       display: flex;
-      width: 100%;
-      max-width: 200px;
-      justify-content: center;
-      text-align: center;
-      border-radius: 15px;
-      margin: 0 auto; }
-
-.contact-hero-image {
-  width: 100%;
-  height: 440px; }
-  .contact-hero-image img {
-    height: 440px;
-    object-fit: cover;
-    width: 100%; }
-
-.page-template-template-contact-php .footer {
-  margin-top: 0; }
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 40px; }
+    .review__section__inner__div__bg {
+      position: absolute;
+      width: 1630px;
+      height: 100%;
+      z-index: -1; }
+      @media (min-width: 2000px) {
+        .review__section__inner__div__bg {
+          width: 90%; } }
+  .review__section__inner--in {
+    margin-bottom: 140px; }
+    .review__section__inner--in:nth-child(odd) .review__section__inner__div__bg {
+      background: #DEDEDE; }
+    .review__section__inner--in:nth-child(odd) .review__section__inner__div h2, .review__section__inner--in:nth-child(odd) .review__section__inner__div p {
+      color: #4A4A4A; }
+    .review__section__inner--in:nth-child(odd) .review__section__inner__div a {
+      color: #fff;
+      background: #6D6875; }
+      .review__section__inner--in:nth-child(odd) .review__section__inner__div a:hover {
+        background: #fff;
+        color: #6D6875; }
+    .review__section__inner--in:nth-child(even) .review__section__inner__div--add {
+      flex-direction: row-reverse; }
+    .review__section__inner--in:nth-child(even) .review__section__inner__div__text {
+      padding-left: 140px;
+      text-align: left;
+      padding-right: 50px; }
+    .review__section__inner--in:nth-child(even) .review__section__inner__div__bg {
+      right: 0;
+      background: #6D6875; }
+    .review__section__inner--in:nth-child(1) .review__section__inner__div__bg {
+      background: #6D6875; }
+    .review__section__inner--in:nth-child(1) .review__section__inner__div h2, .review__section__inner--in:nth-child(1) .review__section__inner__div p {
+      color: #fff; }
+    .review__section__inner--in:last-child .review__section__inner__div__bg {
+      height: 85%; }
+  .review__section__inner .full-information {
+    width: 85%;
+    margin-top: 60px;
+    margin-left: auto;
+    display: none;
+    padding-right: 325px; }
+    .review__section__inner .full-information--text {
+      max-width: 1326px; }
+      .review__section__inner .full-information--text p {
+        font-size: 26px;
+        line-height: 36px; }
+  .review__section .show-less {
+    display: inline-block;
+    margin-top: 30px;
+    cursor: pointer; }
 
 body {
   color: #4a4a4a; }

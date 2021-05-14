@@ -1,76 +1,135 @@
-.contact__section{
-  background: #716D77;
-  padding-bottom: 80px;
-  h2{
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    line-height: 53px;
-    font-weight: 400;
-    padding: 100px 0 50px;
-    text-transform: uppercase;
-  }
-  .wpcf7{
-    max-width: 875px;
-    margin: 0 auto;
-    label{
-      margin: 5px 0 40px;
-      font-size: 18px;
-      color: #fff;
-      display: block;
-    }
-    .form-input{
-      width: 100%;
-      position: relative;
-      height: 60px;
-      padding: 10px 17px;
-      border-radius: 6px;
-      font-size: 16px;
-      line-height: 22px;
-      color: #000;
-      background-color: #fff;
-      @include media-maxw-767{
-          height: 50px;
-          font-size: 14px;
-      }
-    }
-    .div-client-message{
-      textarea{
-        height: 140px;
-      }
-    }
-
-    .form-submit {
-      border: 1px solid #4A4A4A;
-      color: #4A4A4A;
-      background-color: #fff;
-      font-size: 20px;
-      line-height: 27px;
-      text-transform: uppercase;
-      padding: 22px 5px;
-      display: flex;
-      width: 100%;
-      max-width: 200px;
-      justify-content: center;
-      text-align: center;
-      border-radius: 15px;
+.review__section{
+  padding-top: 140px;
+  &__inner{
+    &--all{
+      max-width: 1330px;
       margin: 0 auto;
     }
+    &__div{
+      padding: 40px 0;
+      position: relative;
 
+      &__text{
+        text-align: right;
+        padding-right: 140px;
+        h2{
+          color: #fff;
+          font-size: 40px;
+          font-weight: 600;
+          margin-bottom: 60px;
+        }
+        div{
+          p{
+            color: #fff;
+            font-size: 30px;
+            line-height: 45px;
+          }
+        }
+        a{
+          margin-top: 40px;
+          display: inline-block;
+          background: #fff;
+          border: 1px solid #fff;
+          cursor: pointer;
+          &:hover{
+            border: 1px solid #555555;
+          }
+        }
+      }
+      img{
+        filter: grayscale(100%);
+        margin-top: -90px;
+        margin-bottom: 20px;
+      }
+      &--add{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-top: 40px;
+      }
+      &__bg{
+        position: absolute;
+        width: 1630px;
+        height: 100%;
+        z-index: -1;
+        @media (min-width: 2000px){
+          width: 90%;
+        }
+      }
+    }
+    &--in{
+      margin-bottom: 140px;
 
+      &:nth-child(odd){
+        .review__section__inner__div{
+          &__bg{
+            background: #DEDEDE;
+          }
+          h2,p{
+            color: #4A4A4A;
+          }
+          a{
+            color: #fff;
+            background: #6D6875;
+            &:hover{
+              background: #fff;
+              color: #6D6875;
+            }
+          }
+        }
+      }
+      &:nth-child(even){
+        .review__section__inner__div{
+          &--add{
+            flex-direction: row-reverse;
+          }
+          &__text{
+            padding-left: 140px;
+            text-align: left;
+            padding-right: 50px;
+          }
+          &__bg{
+            right: 0;
+            background: #6D6875;
+          }
+        }
+      }
+      &:nth-child(1){
+        .review__section__inner__div{
+          &__bg{
+            background: #6D6875;
+          }
+          h2,p{
+            color: #fff;
+          }
+        }
+      }
+      &:last-child{
+        .review__section__inner__div{
+          &__bg{
+            height: 85%;
+          }
+        }
+      }
+    }
+    .full-information{
+      width: 85%;
+      margin-top: 60px;
+      margin-left: auto;
+      display: none;
+      padding-right: 325px;
+      &--text{
+        max-width: 1326px;
+        p{
+          font-size: 26px;
+          line-height: 36px;
+        }
+      }
+    }
   }
-}
-.contact-hero-image{
-  width: 100%;
-  height: 440px;
-  img{
-    height: 440px;
-    object-fit: cover;
-    width: 100%;
-  }
-}
-.page-template-template-contact-php{
-  .footer{
-    margin-top: 0;
+  .show-less{
+    display: inline-block;
+    margin-top: 30px;
+    cursor: pointer;
   }
 }

@@ -29,7 +29,12 @@ p{
     font-family: "akagi-pro", sans-serif;
     font-weight: 400;
 }
-
+.page-elemets{
+  &::before{
+    // content: url('img/page-elemets-1.svg');
+    // position: absolute;
+  }
+}
 
 .player--div{
     padding: 15px 0 60px;

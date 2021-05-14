@@ -2,6 +2,26 @@
 
 	$(function () {
 
+      $(document).ready(function(){
+        $(".review__section__inner .read-more").click(function(){
+          $(this).parent().parent().parent().toggleClass('active');
+          var dataID = $(this).data('id');
+          if($(this).parent().parent().parent().hasClass('active')){
+            $("#"+dataID).slideDown('slow');
+          }else{
+            $("#"+dataID).slideUp('slow');
+          }
+        });
+
+        $(".review__section__inner .show-less").click(function(){
+          var dataID = $(this).data('id');
+          var dataDiv = $(this).data('div');
+
+          $("#"+dataDiv).removeClass('active');
+          $("#"+dataID).slideUp('slow');
+        });
+      });
+
     });
     window.addEventListener('load', function () {
 
@@ -31,8 +51,6 @@ var lazyLoadFn = function () {
       }
   });
 }
-
-
 
 var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
     loop: true,

@@ -6,7 +6,6 @@
         padding-inline-start: 5px;
         li{
           display: flex;
-          align-items: center;
           margin-bottom: 30px;
           font-size: 30px;
           position: relative;
@@ -14,6 +13,7 @@
             content: url('img/feather-book-open.svg');
             margin-right: 30px;
             margin-bottom: -10px;
+            padding-top: 9px;
           }
         }
       }
