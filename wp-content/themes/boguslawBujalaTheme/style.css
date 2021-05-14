@@ -431,6 +431,9 @@ h2 {
   @media only screen and (max-width: 1440px) {
     .header--h2 {
       font-size: 28px; } }
+  @media only screen and (max-width: 991px) {
+    .header--h2 {
+      font-size: 25px; } }
 
 .header--h4 {
   font-size: 24px;
@@ -483,6 +486,9 @@ h1, h2, h3, h4, h5, h6 {
         width: 650px;
         max-width: 100%;
         justify-content: space-between; }
+        @media only screen and (max-width: 991px) {
+          .header .nav__wrapper .nav__menu .menu-list {
+            width: 470px; } }
         .header .nav__wrapper .nav__menu .menu-list .menu-item {
           position: relative; }
           .header .nav__wrapper .nav__menu .menu-list .menu-item a {
@@ -492,9 +498,8 @@ h1, h2, h3, h4, h5, h6 {
             color: #000; }
             @media only screen and (max-width: 991px) {
               .header .nav__wrapper .nav__menu .menu-list .menu-item a {
-                font-size: 13px;
-                line-height: 30px;
-                font-family: 'Poppins-SemiBold'; } }
+                font-size: 15px;
+                line-height: 30px; } }
           .header .nav__wrapper .nav__menu .menu-list .menu-item .sub-menu {
             display: none;
             position: absolute;
@@ -534,28 +539,58 @@ h1, h2, h3, h4, h5, h6 {
         background: #000;
         border-radius: 50px;
         margin-bottom: 50px; }
+        @media only screen and (max-width: 991px) {
+          .header .nav__wrapper__br {
+            width: 65%;
+            margin-bottom: 25px; } }
     .header .nav__logo-link {
       padding: 50px 0 50px; }
+      @media only screen and (max-width: 991px) {
+        .header .nav__logo-link {
+          padding: 35px 0 25px; } }
+    @media only screen and (max-width: 991px) {
+      .header .nav__logo {
+        width: 285px; } }
 
 .footer {
   margin-top: 140px;
   background: #DEDEDE;
   padding: 140px 0 60px; }
+  @media only screen and (max-width: 991px) {
+    .footer {
+      padding: 50px 0 30px; } }
   .footer .container-footer__div {
     padding: 0 50px; }
+    .footer .container-footer__div img {
+      object-fit: cover; }
+      @media only screen and (max-width: 991px) {
+        .footer .container-footer__div img {
+          width: 150px; } }
   .footer h2 {
     font-weight: 600;
     font-size: 40px;
     line-height: 46px;
     color: #4A4A4A;
     margin-bottom: 80px; }
+    @media only screen and (max-width: 991px) {
+      .footer h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 25px; } }
   .footer .footer_text {
     max-width: 875px;
     margin-left: auto; }
+    @media only screen and (max-width: 991px) {
+      .footer .footer_text {
+        max-width: 380px; } }
     .footer .footer_text p {
       font-size: 30px;
       line-height: 46px;
       color: #4A4A4A; }
+      @media only screen and (max-width: 991px) {
+        .footer .footer_text p {
+          font-size: 15px;
+          line-height: 20px; } }
   .footer .footer-menu--div {
     margin-top: 90px;
     background: #707070;
@@ -571,6 +606,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 27px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 991px) {
+      .footer .footer-menu--div {
+        font-size: 10px;
+        height: 46px; } }
     .footer .footer-menu--div a {
       color: #fff; }
     .footer .footer-menu--div .row {
@@ -584,15 +623,54 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: initial;
         display: flex;
         align-items: center; }
+        @media only screen and (max-width: 991px) {
+          .footer .footer-menu--div .row span:last-child {
+            padding-right: 40px; } }
         .footer .footer-menu--div .row span:last-child::before {
           content: url("img/material-mail.svg");
           margin-right: 15px;
           margin-bottom: -6px; }
+          @media only screen and (max-width: 991px) {
+            .footer .footer-menu--div .row span:last-child::before {
+              content: url("img/material-mail-small.svg"); } }
     .footer .footer-menu--div #menu-footer-menu {
       display: flex;
       max-width: 710px;
       justify-content: space-between;
       width: 100%; }
+      @media only screen and (max-width: 991px) {
+        .footer .footer-menu--div #menu-footer-menu {
+          max-width: 320px; } }
+
+.error404 {
+  background: #DEDEDE; }
+  .error404 #notfound {
+    margin-top: 400px;
+    text-align: center; }
+    .error404 #notfound h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 70px; }
+    .error404 #notfound a {
+      margin: 70px 0 50px;
+      font-size: 40px;
+      line-height: 53px;
+      color: #4A4A4A;
+      display: block; }
+      .error404 #notfound a:hover {
+        color: #000; }
+    .error404 #notfound .notfound-404 {
+      background: #716D77;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .error404 #notfound .notfound-404 h1 {
+        font-size: 350px;
+        line-height: 466px;
+        color: #fff;
+        margin-block-start: 0em;
+        margin-block-end: 0em; }
 
 .hero-section--global .hero-section--text-div {
   top: 32% !important; }
@@ -600,14 +678,22 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline-start: 5px; }
     .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li {
       display: flex;
-      margin-bottom: 30px;
-      font-size: 30px;
+      margin-bottom: 20px;
+      font-size: 26px;
       position: relative; }
+      @media only screen and (max-width: 991px) {
+        .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li {
+          font-size: 15px;
+          line-height: 20px;
+          margin-bottom: 8px; } }
       .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li::before {
         content: url("img/feather-book-open.svg");
         margin-right: 30px;
         margin-bottom: -10px;
         padding-top: 9px; }
+        @media only screen and (max-width: 991px) {
+          .hero-section--global .hero-section--text-div .hero-section--text-div--p ul li::before {
+            content: url("img/feather-book-open-small.svg"); } }
   .hero-section--global .hero-section--text-div .row--global--default-page {
     align-items: center;
     justify-content: space-between;
@@ -640,6 +726,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 1385px;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .hero-section {
+      height: 580px; } }
   .hero-section__bg {
     position: relative;
     width: 100%;
@@ -652,11 +741,18 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: flex-start;
     justify-content: center; }
+    @media only screen and (max-width: 991px) {
+      .hero-section__bg {
+        height: 580px; } }
     .hero-section__bg__h2 {
       font-size: 40px;
       color: #fff;
       text-align: center;
       line-height: 53px; }
+      @media only screen and (max-width: 991px) {
+        .hero-section__bg__h2 {
+          font-size: 25px;
+          line-height: 33px; } }
     .hero-section__bg .hero-section--text-div {
       position: absolute;
       top: 40%;
@@ -664,16 +760,32 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(109, 104, 117, 0.7);
       padding: 75px 0;
       color: #fff; }
+      @media only screen and (max-width: 991px) {
+        .hero-section__bg .hero-section--text-div {
+          top: 43%;
+          padding: 30px 0; } }
       .hero-section__bg .hero-section--text-div--p {
         display: flex;
         margin-top: 40px;
         justify-content: space-between; }
+        @media only screen and (max-width: 991px) {
+          .hero-section__bg .hero-section--text-div--p {
+            padding: 0 40px;
+            margin-top: 10px; } }
         .hero-section__bg .hero-section--text-div--p p {
           font-size: 26px; }
+          @media only screen and (max-width: 991px) {
+            .hero-section__bg .hero-section--text-div--p p {
+              font-size: 16px;
+              line-height: 20px; } }
       .hero-section__bg .hero-section--text-div span {
         text-align: right;
         display: block;
         font-size: 26px; }
+        @media only screen and (max-width: 991px) {
+          .hero-section__bg .hero-section--text-div span {
+            font-size: 16px;
+            padding-right: 40px; } }
 
 .homepage__publications {
   padding: 100px 0;
@@ -689,10 +801,24 @@ h1, h2, h3, h4, h5, h6 {
     top: 51%;
     z-index: 3;
     cursor: pointer; }
+    @media only screen and (max-width: 991px) {
+      .homepage__publications .swiper-button-prev-custom-our, .homepage__publications .swiper-button-next-custom-our {
+        top: 57%; } }
+    @media only screen and (max-width: 991px) {
+      .homepage__publications .swiper-button-prev-custom-our img, .homepage__publications .swiper-button-next-custom-our img {
+        width: 27px; } }
   .homepage__publications .swiper-button-prev-custom-our {
     left: 50px; }
+    @media only screen and (max-width: 991px) {
+      .homepage__publications .swiper-button-prev-custom-our {
+        left: 20px; } }
   .homepage__publications .swiper-button-next-custom-our {
     right: 50px; }
+    @media only screen and (max-width: 991px) {
+      .homepage__publications .swiper-button-next-custom-our {
+        right: 20px; } }
+  .homepage__publications .container {
+    padding: 0 70px; }
 
 .homepage__other__inner {
   position: relative;
@@ -703,23 +829,48 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 58px;
     text-transform: uppercase;
     font-weight: bold; }
+    @media only screen and (max-width: 991px) {
+      .homepage__other__inner__div .header--h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 25px; } }
   .homepage__other__inner__div p {
     font-size: 30px;
     line-height: 46px;
     max-width: 600px; }
+    @media only screen and (max-width: 991px) {
+      .homepage__other__inner__div p {
+        font-size: 15px;
+        max-width: 290px;
+        line-height: 20px; } }
+  .homepage__other__inner__div h2 {
+    color: #fff; }
   .homepage__other__inner__div a {
     position: absolute;
     right: 15%;
     bottom: 0; }
+    @media only screen and (max-width: 991px) {
+      .homepage__other__inner__div a {
+        right: 4%;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 4px 51px; } }
   .homepage__other__inner__div:first-child {
     background: #6D6875;
     color: #fff;
     padding: 115px 0 90px 250px;
     width: 65%; }
+    @media only screen and (max-width: 991px) {
+      .homepage__other__inner__div:first-child {
+        padding: 80px 0 90px 65px;
+        width: 75%; } }
   .homepage__other__inner__div img {
     position: absolute;
     top: 95px;
     right: 0; }
+    @media only screen and (max-width: 991px) {
+      .homepage__other__inner__div img {
+        width: 375px; } }
 
 .homepage__love {
   margin-top: 140px; }
@@ -728,10 +879,14 @@ h1, h2, h3, h4, h5, h6 {
     .homepage__love__inner__all {
       background: #DEDEDE;
       margin-left: auto;
-      width: 80%; }
+      width: 80%;
+      position: relative; }
     .homepage__love__inner__div {
       position: relative;
       padding: 115px 0 0 350px; }
+      @media only screen and (max-width: 991px) {
+        .homepage__love__inner__div {
+          padding: 80px 0 0 180px; } }
       .homepage__love__inner__div .header--h2 {
         font-size: 40px;
         margin-bottom: 60px;
@@ -739,14 +894,26 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         font-weight: bold;
         color: #4A4A4A; }
+        @media only screen and (max-width: 991px) {
+          .homepage__love__inner__div .header--h2 {
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 25px; } }
       .homepage__love__inner__div .loveImagePubli {
         position: absolute;
         top: 195px;
         left: -6%; }
+        @media only screen and (max-width: 991px) {
+          .homepage__love__inner__div .loveImagePubli {
+            width: 140px;
+            top: 70px; } }
       .homepage__love__inner__div .text-inner {
         display: flex;
         max-width: 890px;
         justify-content: space-between; }
+        @media only screen and (max-width: 991px) {
+          .homepage__love__inner__div .text-inner {
+            max-width: 400px; } }
         .homepage__love__inner__div .text-inner p {
           font-size: 30px;
           line-height: 46px;
@@ -756,6 +923,10 @@ h1, h2, h3, h4, h5, h6 {
             text-align: right;
             display: block;
             color: #707070; }
+          @media only screen and (max-width: 991px) {
+            .homepage__love__inner__div .text-inner p {
+              font-size: 15px;
+              line-height: 20px; } }
         .homepage__love__inner__div .text-inner a {
           position: absolute;
           right: 15%;
@@ -770,6 +941,15 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 27px;
     border: 3px solid #4A4A4A;
     font-weight: 400; }
+    @media only screen and (max-width: 991px) {
+      .homepage__love .player-btn {
+        position: absolute;
+        left: -7%;
+        top: 50%;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 4px 16px;
+        margin-top: -30px; } }
     .homepage__love .player-btn:hover {
       background: #4A4A4A;
       color: #fff; }
@@ -783,15 +963,39 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start; }
+    @media only screen and (max-width: 991px) {
+      .homepage__corpse .text-inner {
+        width: 60%;
+        padding-left: 90px; } }
     .homepage__corpse .text-inner h2 {
       font-weight: bold;
       line-height: 58px;
       color: #4A4A4A;
       text-transform: uppercase; }
+      @media only screen and (max-width: 991px) {
+        .homepage__corpse .text-inner h2 {
+          font-size: 25px;
+          line-height: 25px;
+          margin-bottom: 25px; } }
     .homepage__corpse .text-inner p {
       font-size: 30px;
       line-height: 46px;
       color: #4A4A4A; }
+      @media only screen and (max-width: 991px) {
+        .homepage__corpse .text-inner p {
+          font-size: 15px;
+          line-height: 20px; } }
+  @media only screen and (max-width: 991px) {
+    .homepage__corpse a {
+      font-size: 15px;
+      line-height: 20px;
+      padding: 6px 35px;
+      margin-top: 20px; } }
+  .homepage__corpse img {
+    object-fit: cover; }
+    @media only screen and (max-width: 991px) {
+      .homepage__corpse img {
+        width: 40%; } }
 
 .contact__section {
   background: #716D77;

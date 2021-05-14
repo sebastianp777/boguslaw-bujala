@@ -6,10 +6,14 @@
       background: #DEDEDE;
       margin-left: auto;
       width: 80%;
+      position: relative;
     }
     &__div{
       position: relative;
       padding: 115px 0 0 350px;
+      @include media-maxw-991{
+        padding: 80px 0 0 180px;
+      }
       .header--h2{
         font-size: 40px;
         margin-bottom: 60px;
@@ -17,16 +21,28 @@
         text-transform: uppercase;
         font-weight: bold;
         color: #4A4A4A;
+        @include media-maxw-991{
+          font-size: 25px;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
       }
       .loveImagePubli{
         position: absolute;
         top: 195px;
         left: -6%;
+        @include media-maxw-991{
+          width: 140px;
+          top: 70px;
+        }
       }
       .text-inner{
         display: flex;
         max-width: 890px;
         justify-content: space-between;
+        @include media-maxw-991{
+          max-width: 400px;
+        }
         p{
           font-size: 30px;
           line-height: 46px;
@@ -36,6 +52,10 @@
             text-align: right;
             display: block;
             color: #707070;
+          }
+          @include media-maxw-991{
+            font-size: 15px;
+            line-height: 20px;
           }
         }
         a{
@@ -57,6 +77,15 @@
     line-height: 27px;
     border: 3px solid #4A4A4A;
     font-weight: 400;
+    @include media-maxw-991{
+      position: absolute;
+      left: -7%;
+      top: 50%;
+      font-size:15px;
+      line-height: 20px;
+      padding: 4px 16px;
+      margin-top: -30px;
+    }
     &:hover{
       background: #4A4A4A;
       color: #fff;

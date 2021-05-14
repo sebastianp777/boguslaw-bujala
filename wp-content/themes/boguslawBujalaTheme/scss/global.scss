@@ -449,6 +449,9 @@ h2 {
     @include media-maxw-1440{
         font-size: 28px;
     }
+    @include media-maxw-991{
+        font-size: 25px;
+      }
 }
 
 .header--h4 {

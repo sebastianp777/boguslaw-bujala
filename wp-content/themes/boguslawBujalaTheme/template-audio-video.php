@@ -28,7 +28,7 @@ if ( $audio_video_heroimage ) :
                         if ( have_rows( 'audio_video_post_video', $audio_video ) ) :
                             while ( have_rows( 'audio_video_post_video', $audio_video ) ) : the_row(); ?>
 
-                                    <!-- <div class="video__div">
+                                    <div class="video__div">
                                         <div class="video__div__description">
                                             <div class="video-description"><?= the_sub_field('text', $audio_video); ?>
                                                 <?php
@@ -41,7 +41,7 @@ if ( $audio_video_heroimage ) :
                                         <div class="embed-container">
                                             <?php the_sub_field('link', $audio_video); ?>
                                         </div>
-                                    </div> -->
+                                    </div>
 
                             <?php endwhile;
                         endif;

@@ -16,6 +16,7 @@
         $(".review__section__inner .show-less").click(function(){
           var dataID = $(this).data('id');
           var dataDiv = $(this).data('div');
+          console.log(dataDiv);
 
           $("#"+dataDiv).removeClass('active');
           $("#"+dataID).slideUp('slow');
@@ -69,11 +70,11 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
       },
       breakpoints: {
         767: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 10,
         },
         992: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 20,
         },
     },

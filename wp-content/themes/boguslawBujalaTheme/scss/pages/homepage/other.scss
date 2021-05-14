@@ -9,27 +9,53 @@
         line-height: 58px;
         text-transform: uppercase;
         font-weight: bold;
+        @include media-maxw-991{
+          font-size: 25px;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
       }
       p{
         font-size: 30px;
         line-height: 46px;
         max-width: 600px;
+        @include media-maxw-991{
+          font-size: 15px;
+          max-width: 290px;
+          line-height: 20px;
+        }
+      }
+      h2{
+        color: #fff;
       }
       a{
         position: absolute;
         right: 15%;
         bottom: 0;
+        @include media-maxw-991{
+          right: 4%;
+          font-size: 15px;
+          line-height: 20px;
+          padding: 4px 51px;
+        }
       }
       &:first-child{
         background: #6D6875;
         color: #fff;
         padding: 115px 0 90px 250px;
         width: 65%;
+        @include media-maxw-991{
+          padding: 80px 0 90px 65px;
+          width: 75%;
+        }
       }
       img{
         position: absolute;
         top: 95px;
         right: 0;
+        @include media-maxw-991{
+          width: 375px;
+        }
       }
     }
   }

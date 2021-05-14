@@ -7,16 +7,43 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @include media-maxw-991{
+      width: 60%;
+      padding-left: 90px;
+    }
     h2{
       font-weight: bold;
       line-height: 58px;
       color: #4A4A4A;
       text-transform: uppercase;
+      @include media-maxw-991{
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 25px;
+      }
     }
     p{
       font-size: 30px;
       line-height: 46px;
       color: #4A4A4A;
+      @include media-maxw-991{
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+  a{
+    @include media-maxw-991{
+      font-size:15px;
+      line-height: 20px;
+      padding: 6px 35px;
+      margin-top: 20px;
+    }
+  }
+  img{
+    object-fit: cover;
+    @include media-maxw-991{
+      width: 40%;
     }
   }
 }
