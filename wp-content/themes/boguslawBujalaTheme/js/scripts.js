@@ -66,7 +66,7 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
 
   });
 
-// var dataId = $('#controls').data('tab');
+var dataId = $('#controls').data('id');
 
 var $source = $("#audiotrack")[0],
     $track = $("#track"),

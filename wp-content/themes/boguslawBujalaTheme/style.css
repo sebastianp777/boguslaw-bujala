@@ -155,6 +155,13 @@ h2 {
   padding: 0 15px;
   width: 100%; }
 
+.container-sm {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px;
+  width: 100%; }
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -910,35 +917,115 @@ h1, h2, h3, h4, h5, h6 {
         text-align: left; }
 .audio-video__section__inner {
   margin-top: 500px; }
-.audio-video__section .audio__div img {
-  filter: grayscale(100%); }
-.audio-video__section .audio__div .audio-with-text {
-  padding-left: 140px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
+.audio-video__section .audio__div {
+  margin-bottom: 140px; }
+  .audio-video__section .audio__div img {
+    filter: grayscale(100%); }
+  .audio-video__section .audio__div .audio-with-text {
+    padding-left: 140px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .audio-video__section .audio__div .audio-with-text .audio-description p {
+      color: #4A4A4A;
+      font-size: 40px;
+      line-height: 53px;
+      font-weight: 600; }
+  .audio-video__section .audio__div .player--div-gb {
+    padding: 0; }
+    .audio-video__section .audio__div .player--div-gb .player-wrapper {
+      width: 100%;
+      max-width: 100%; }
+      .audio-video__section .audio__div .player--div-gb .player-wrapper #controls {
+        justify-content: space-between; }
+      .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--play-mid {
+        display: flex;
+        align-items: center; }
+      .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--volum-r {
+        display: flex;
+        align-items: center; }
+        .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--volum-r #volume {
+          margin-top: -5px;
+          margin-left: -7px; }
+  .audio-video__section .audio__div:nth-child(even) .container-md-hero .row {
+    flex-direction: row-reverse; }
+    .audio-video__section .audio__div:nth-child(even) .container-md-hero .row .audio-with-text {
+      padding-left: 0;
+      padding-right: 140px; }
+      .audio-video__section .audio__div:nth-child(even) .container-md-hero .row .audio-with-text .audio-description p {
+        text-align: right; }
+.audio-video__section .audio-video__section__gallery .row {
   justify-content: space-between; }
-  .audio-video__section .audio__div .audio-with-text .audio-description p {
-    color: #4A4A4A;
+  .audio-video__section .audio-video__section__gallery .row .gallery__div {
+    margin-bottom: 40px; }
+.audio-video__section .audio-video__section__gallery h2 {
+  padding: 0 0 40px 80px; }
+
+.page-template-template-audio-video-php .footer {
+  padding: 100px 0 60px; }
+
+.contact__section {
+  background: #716D77;
+  padding-bottom: 80px; }
+  .contact__section h2 {
+    text-align: center;
+    color: #fff;
     font-size: 40px;
     line-height: 53px;
-    font-weight: 600; }
-.audio-video__section .audio__div .player--div-gb {
-  padding: 0; }
-  .audio-video__section .audio__div .player--div-gb .player-wrapper {
-    width: 100%;
-    max-width: 100%; }
-    .audio-video__section .audio__div .player--div-gb .player-wrapper #controls {
-      justify-content: space-between; }
-    .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--play-mid {
+    font-weight: 400;
+    padding: 100px 0 50px;
+    text-transform: uppercase; }
+  .contact__section .wpcf7 {
+    max-width: 875px;
+    margin: 0 auto; }
+    .contact__section .wpcf7 label {
+      margin: 5px 0 40px;
+      font-size: 18px;
+      color: #fff;
+      display: block; }
+    .contact__section .wpcf7 .form-input {
+      width: 100%;
+      position: relative;
+      height: 60px;
+      padding: 10px 17px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+      background-color: #fff; }
+      @media only screen and (max-width: 767px) {
+        .contact__section .wpcf7 .form-input {
+          height: 50px;
+          font-size: 14px; } }
+    .contact__section .wpcf7 .div-client-message textarea {
+      height: 140px; }
+    .contact__section .wpcf7 .form-submit {
+      border: 1px solid #4A4A4A;
+      color: #4A4A4A;
+      background-color: #fff;
+      font-size: 20px;
+      line-height: 27px;
+      text-transform: uppercase;
+      padding: 22px 5px;
       display: flex;
-      align-items: center; }
-    .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--volum-r {
-      display: flex;
-      align-items: center; }
-      .audio-video__section .audio__div .player--div-gb .player-wrapper .controls--volum-r #volume {
-        margin-top: -5px;
-        margin-left: -7px; }
+      width: 100%;
+      max-width: 200px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 15px;
+      margin: 0 auto; }
+
+.contact-hero-image {
+  width: 100%;
+  height: 440px; }
+  .contact-hero-image img {
+    height: 440px;
+    object-fit: cover;
+    width: 100%; }
+
+.page-template-template-contact-php .footer {
+  margin-top: 0; }
 
 body {
   color: #4a4a4a; }

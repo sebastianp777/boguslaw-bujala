@@ -1,0 +1,76 @@
+.contact__section{
+  background: #716D77;
+  padding-bottom: 80px;
+  h2{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: 400;
+    padding: 100px 0 50px;
+    text-transform: uppercase;
+  }
+  .wpcf7{
+    max-width: 875px;
+    margin: 0 auto;
+    label{
+      margin: 5px 0 40px;
+      font-size: 18px;
+      color: #fff;
+      display: block;
+    }
+    .form-input{
+      width: 100%;
+      position: relative;
+      height: 60px;
+      padding: 10px 17px;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+      background-color: #fff;
+      @include media-maxw-767{
+          height: 50px;
+          font-size: 14px;
+      }
+    }
+    .div-client-message{
+      textarea{
+        height: 140px;
+      }
+    }
+
+    .form-submit {
+      border: 1px solid #4A4A4A;
+      color: #4A4A4A;
+      background-color: #fff;
+      font-size: 20px;
+      line-height: 27px;
+      text-transform: uppercase;
+      padding: 22px 5px;
+      display: flex;
+      width: 100%;
+      max-width: 200px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 15px;
+      margin: 0 auto;
+    }
+
+
+  }
+}
+.contact-hero-image{
+  width: 100%;
+  height: 440px;
+  img{
+    height: 440px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.page-template-template-contact-php{
+  .footer{
+    margin-top: 0;
+  }
+}

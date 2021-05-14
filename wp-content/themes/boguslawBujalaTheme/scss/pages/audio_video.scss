@@ -80,6 +80,7 @@
     margin-top: 500px;
   }
 .audio__div{
+  margin-bottom: 140px;
   img{
     filter: grayscale(100%);
   }
@@ -122,5 +123,37 @@
       }
     }
   }
+  &:nth-child(even){
+    .container-md-hero{
+      .row{
+        flex-direction: row-reverse;
+        .audio-with-text{
+          padding-left: 0;
+          padding-right: 140px;
+          .audio-description{
+            p{
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+.audio-video__section__gallery{
+  .row{
+    justify-content: space-between;
+    .gallery__div{
+      margin-bottom: 40px;
+    }
+  }
+  h2{
+    padding: 0 0 40px 80px;
+  }
+}
+}
+.page-template-template-audio-video-php{
+  .footer{
+    padding: 100px 0 60px;
+  }
 }
