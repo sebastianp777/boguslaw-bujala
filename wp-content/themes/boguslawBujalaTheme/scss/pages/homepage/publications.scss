@@ -8,16 +8,34 @@
     line-height: 53px;
     text-transform: uppercase;
   }
+
   .swiper-button-prev-custom-our, .swiper-button-next-custom-our{
     position: absolute;
     top: 51%;
     z-index: 3;
     cursor: pointer;
+    @include media-maxw-991{
+      top: 57%;
+    }
+    img{
+      @include media-maxw-991{
+        width: 27px;
+      }
+    }
   }
   .swiper-button-prev-custom-our{
     left: 50px;
+    @include media-maxw-991{
+      left: 20px;
+    }
   }
   .swiper-button-next-custom-our{
     right: 50px;
+    @include media-maxw-991{
+      right: 20px;
+    }
+  }
+  .container{
+    padding: 0 70px;
   }
 }

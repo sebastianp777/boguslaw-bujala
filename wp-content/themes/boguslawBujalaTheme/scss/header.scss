@@ -31,6 +31,9 @@
                     width: 650px;
                     max-width: 100%;
                     justify-content: space-between;
+                    @include media-maxw-991{
+                        width: 470px;
+                    }
                     .menu-item {
                         position: relative;
                         a {
@@ -39,9 +42,8 @@
                             text-transform: uppercase;
                             color: #000;
                             @include media-maxw-991{
-                                font-size: 13px;
+                                font-size: 15px;
                                 line-height: 30px;
-                                font-family: 'Poppins-SemiBold';
                             }
                         }
                         .sub-menu{
@@ -104,11 +106,23 @@
                 background: #000;
                 border-radius: 50px;
                 margin-bottom: 50px;
+                @include media-maxw-991{
+                    width: 65%;
+                    margin-bottom: 25px;
+                }
             }
         }
 
         &__logo-link{
             padding: 50px 0 50px;
+            @include media-maxw-991{
+                padding: 35px 0 25px;
+            }
+        }
+        &__logo{
+            @include media-maxw-991{
+                width: 285px;
+            }
         }
     }
 

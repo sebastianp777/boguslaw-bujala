@@ -35,6 +35,8 @@
 </head>
 <body <?php body_class(); ?> id="scroll-top">
 
+<div class="page-elemets">
+
 <!-- header -->
 <header class="header clear desktop-small" role="banner">
     <div class="nav__wrapper">

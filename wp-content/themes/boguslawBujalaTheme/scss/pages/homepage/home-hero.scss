@@ -3,6 +3,9 @@
     height: 1385px;
     display: flex;
     align-items: center;
+    @include media-maxw-991{
+      height: 580px;
+    }
     &__bg{
       position: relative;
       width: 100%;
@@ -15,12 +18,18 @@
       display: flex;
       align-items: flex-start;
       justify-content: center;
-
+      @include media-maxw-991{
+        height: 580px;
+      }
       &__h2{
         font-size: 40px;
         color: #fff;
         text-align: center;
         line-height: 53px;
+        @include media-maxw-991{
+          font-size: 25px;
+          line-height: 33px;
+        }
       }
       .hero-section--text-div{
         position: absolute;
@@ -29,18 +38,34 @@
         background: rgba(109, 104, 117, 0.7);
         padding: 75px 0;
         color: #fff;
+        @include media-maxw-991{
+          top: 43%;
+          padding: 30px 0;
+        }
         &--p{
           display: flex;
           margin-top: 40px;
           justify-content: space-between;
+          @include media-maxw-991{
+            padding: 0 40px;
+            margin-top: 10px;
+          }
           p{
             font-size: 26px;
+            @include media-maxw-991{
+              font-size: 16px;
+              line-height: 20px;
+            }
           }
         }
         span{
           text-align: right;
           display: block;
-          font-size: 26px
+          font-size: 26px;
+          @include media-maxw-991{
+            font-size: 16px;
+            padding-right: 40px;
+          }
         }
       }
     }

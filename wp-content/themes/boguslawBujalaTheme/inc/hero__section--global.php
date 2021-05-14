@@ -29,10 +29,14 @@
                             </div>
                         <?php endif;?>
                     </div>
-                    <?php else:?>
+                    <?php elseif(get_field('hero_image_global_text_2')):?>
                         <div class="hero-section--text-div--p">
                             <div class="col-md-6"><?php the_field('hero_image_global_text_1'); ?></div>
                             <div class="col-md-6"><?php the_field('hero_image_global_text_2'); ?></div>
+                        </div>
+                    <?php else:?>
+                        <div class="hero-section--text-div--p">
+                            <div class="col-md-12"><?php the_field('hero_image_global_text_1'); ?></div>
                         </div>
                     <?php endif;?>
             </div>

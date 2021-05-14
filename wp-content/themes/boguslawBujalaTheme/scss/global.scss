@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// do testów
+// .poezja main {
+//     margin-top: 5em;
+// }
+
+>>>>>>> cffeb5b4f1b670c9b8d2bd5e6bdc4076346e2a16
 // colors
 .has-white-color {
     color: $white;}
@@ -104,6 +112,13 @@
     padding: 0 15px;
     width: 100%;
 
+}
+.container-sm {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 15px;
+    width: 100%;
 }
 
 .row {
@@ -420,6 +435,9 @@
     @include media-maxw-1440{
         font-size: 28px;
     }
+    @include media-maxw-991{
+        font-size: 25px;
+      }
 }
 
 .header--h4 {

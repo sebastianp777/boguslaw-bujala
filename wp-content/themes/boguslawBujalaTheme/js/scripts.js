@@ -2,6 +2,27 @@
 
 	$(function () {
 
+      $(document).ready(function(){
+        $(".review__section__inner .read-more").click(function(){
+          $(this).parent().parent().parent().toggleClass('active');
+          var dataID = $(this).data('id');
+          if($(this).parent().parent().parent().hasClass('active')){
+            $("#"+dataID).slideDown('slow');
+          }else{
+            $("#"+dataID).slideUp('slow');
+          }
+        });
+
+        $(".review__section__inner .show-less").click(function(){
+          var dataID = $(this).data('id');
+          var dataDiv = $(this).data('div');
+          console.log(dataDiv);
+
+          $("#"+dataDiv).removeClass('active');
+          $("#"+dataID).slideUp('slow');
+        });
+      });
+
     });
     window.addEventListener('load', function () {
 
@@ -32,8 +53,6 @@ var lazyLoadFn = function () {
   });
 }
 
-
-
 var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
     loop: true,
     slidesPerView: 4,
@@ -51,11 +70,11 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
       },
       breakpoints: {
         767: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 10,
         },
         992: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 20,
         },
     },
@@ -66,7 +85,7 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
 
   });
 
-// var dataId = $('#controls').data('tab');
+var dataId = $('#controls').data('id');
 
 var $source = $("#audiotrack")[0],
     $track = $("#track"),

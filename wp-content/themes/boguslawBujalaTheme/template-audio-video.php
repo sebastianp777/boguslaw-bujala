@@ -7,6 +7,13 @@
     'numberposts' => -1,
 ));
 
+$getGallery = get_posts(array(
+    'post_type' => 'audio_video',
+    'order' => 'ASC',
+    'orderby' => 'date',
+    'numberposts' => -1,
+));
+
 $audio_video_heroimage = get_field('audio_video_heroimage');
 if ( $audio_video_heroimage ) :
      $audiovideourl = wp_get_attachment_image_url($audio_video_heroimage, 'full');?>
@@ -71,26 +78,26 @@ if ( $audio_video_heroimage ) :
                                                                     <span></span>
                                                                 </div>
 
-                                                                <div id="controls" class="<?= $audio_video->ID ?>">
-                                                                    <div class="icon" id="stop">
+                                                                <div id="controls" data-id="<?= $audio_video->ID ?>" class="controls <?= $audio_video->ID ?>">
+                                                                    <div class="icon stop" id="stop">
                                                                         <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/ionic-ios-repeat.svg" alt="">
                                                                     </div>
                                                                     <div class="controls--play-mid">
-                                                                        <div class="icon" id="skip-prev">
+                                                                        <div class="icon skip-prev" id="skip-prev">
                                                                             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-skip-previous.svg" alt="">
                                                                         </div>
-                                                                        <div class="icon" id="play">
+                                                                        <div class="icon play" id="play">
                                                                             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-play-circle-outline.svg" alt="">
                                                                         </div>
-                                                                        <div class="icon" id="pause">
+                                                                        <div class="icon pause" id="pause">
                                                                             <i class="fas fa-pause"></i>
                                                                         </div>
-                                                                        <div class="icon" id="skip-next">
+                                                                        <div class="icon skip-next" id="skip-next">
                                                                             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-skip-next.svg" alt="">
                                                                         </div>
                                                                     </div>
                                                                     <div class="controls--volum-r">
-                                                                        <div class="icon" id="mute">
+                                                                        <div class="icon mute" id="mute">
                                                                             <img class="lazy icon-muted" src="<?php echo get_template_directory_uri(); ?>/img/feather-volume-1.svg" alt="">
                                                                         </div>
                                                                         <div id="volume">
@@ -113,10 +120,35 @@ if ( $audio_video_heroimage ) :
                                 </div>
                             <?php $i++; endwhile;
                          endif;
-                    endif;
+                        endif;
                 endforeach; ?>
             </div>
         <?php endif;?>
+
+
+        <?php if ($getGallery) :?>
+            <div class="audio-video__section__gallery">
+            <div class="container">
+                <h2>Zdjęcia ze spotkania w Domu Literatury w Łodzi 2014</h2>
+            </div>
+                <div class="container-sm">
+                    <div class="row">
+                        <?php foreach ($getGallery as $getGallery) : ?>
+                            <?php if (get_field('audio_video_post_type', $getGallery) == 'gallery'): ?>
+                                <div class="gallery__div">
+                                    <?php $audio_video_post_gallery = get_field( 'audio_video_post_gallery', $getGallery );
+                                    if ( $audio_video_post_gallery ) :
+                                        $imageurl = wp_get_attachment_image_url($audio_video_post_gallery, 'full');?>
+                                        <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
+                                    <?php endif;?>
+                                </div>
+                            <?php endif;
+                        endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        <?php endif;?>
+
 </section>
 
 <?php get_footer(); ?>
