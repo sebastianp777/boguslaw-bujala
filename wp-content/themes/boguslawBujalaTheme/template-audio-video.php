@@ -49,7 +49,7 @@ if ( $audio_video_heroimage ) :
                     if (get_field('audio_video_post_type', $audio_video) == 'audio'):
                         if ( have_rows( 'audio_video_post_audio', $audio_video ) ) :
                             while ( have_rows( 'audio_video_post_audio', $audio_video ) ) : the_row(); $i=1 ?>
-                                <div class="audio__div">
+                                <div class="audio__div" id="<?= $audio_video->ID ?>">
                                     <div class="container-md-hero">
                                         <div class="row">
                                             <?php $image = get_sub_field( 'image' );
@@ -64,7 +64,7 @@ if ( $audio_video_heroimage ) :
                                                     </div>
                                                 </div>
                                                 <div class="embed-container">
-                                                    <audio id="audiotrack" preload="auto">
+                                                    <audio id="audiotrack" class="audiotrack" preload="auto">
                                                         <source src="<?= get_sub_field('link', false, false, $audio_video); ?>" type="audio/mpeg">
                                                     </audio>
 
@@ -72,13 +72,13 @@ if ( $audio_video_heroimage ) :
                                                         <div class="player-wrapper">
                                                             <div id="player">
 
-                                                                <div id="track">
-                                                                    <div id="progress">
+                                                                <div id="track" class="track">
+                                                                    <div id="progress" class="progress">
                                                                     </div>
                                                                     <span></span>
                                                                 </div>
 
-                                                                <div id="controls" data-id="<?= $audio_video->ID ?>" class="controls <?= $audio_video->ID ?>">
+                                                                <div id="controls" class="controls">
                                                                     <div class="icon stop" id="stop">
                                                                         <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/ionic-ios-repeat.svg" alt="">
                                                                     </div>
@@ -86,10 +86,10 @@ if ( $audio_video_heroimage ) :
                                                                         <div class="icon skip-prev" id="skip-prev">
                                                                             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-skip-previous.svg" alt="">
                                                                         </div>
-                                                                        <div class="icon play" id="play">
+                                                                        <div class="icon play" id="play" data-id="<?= $audio_video->ID ?>">
                                                                             <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-play-circle-outline.svg" alt="">
                                                                         </div>
-                                                                        <div class="icon pause" id="pause">
+                                                                        <div class="icon pause" id="pause" data-id="<?= $audio_video->ID ?>">
                                                                             <i class="fas fa-pause"></i>
                                                                         </div>
                                                                         <div class="icon skip-next" id="skip-next">
@@ -100,8 +100,8 @@ if ( $audio_video_heroimage ) :
                                                                         <div class="icon mute" id="mute">
                                                                             <img class="lazy icon-muted" src="<?php echo get_template_directory_uri(); ?>/img/feather-volume-1.svg" alt="">
                                                                         </div>
-                                                                        <div id="volume">
-                                                                            <div id="level"></div>
+                                                                        <div id="volume" class="volume">
+                                                                            <div id="level" class="level"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

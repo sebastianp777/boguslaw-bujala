@@ -17,45 +17,46 @@
                         <img class="lazy lazy-loading loveImagePubli" data-src="<?= $imageurl ?>" alt=""/>
                      <?php endif;?>
                 </div>
-                <audio id="audiotrack" preload="auto">
-                    <source src="http://tobiasbogliolo.com/assets/media/verdi.ogg" type="audio/ogg">
-                    <source src="http://tobiasbogliolo.com/assets/media/verdi.mp3" type="audio/mpeg">
-                    <source src="http://tobiasbogliolo.com/assets/media/verdi.wa" type="audio/wav">
-                </audio>
-                <div class="player--div">
+
+                <div class="player--div audio__div" id="front-audio-div">
+                    <audio id="audiotrack" class="audiotrack" preload="auto" id="<?= $audio_video->ID ?>">
+                        <source src="http://tobiasbogliolo.com/assets/media/verdi.ogg" type="audio/ogg">
+                        <source src="http://tobiasbogliolo.com/assets/media/verdi.mp3" type="audio/mpeg">
+                        <source src="http://tobiasbogliolo.com/assets/media/verdi.wa" type="audio/wav">
+                    </audio>
                     <div class="player-icons-left">
                             <div id="controls">
-                                <div class="icon" id="stop">
+                                <div class="icon stop" id="stop">
                                     <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/ionic-ios-repeat.svg" alt="">
                                 </div>
-                                <div class="icon" id="mute">
+                                <div class="icon mute" id="mute">
                                     <img class="lazy icon-muted" src="<?php echo get_template_directory_uri(); ?>/img/feather-volume-1.svg" alt="">
                                 </div>
-                                <div id="volume">
-                                    <div id="level"></div>
+                                <div id="volume" class="volume">
+                                    <div id="level" class="level"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="player-wrapper">
                             <div id="player">
 
-                                <div id="track">
-                                    <div id="progress">
+                                <div id="track" class="track">
+                                    <div id="progress" class="progress">
                                     </div>
                                     <span></span>
                                 </div>
 
-                                <div id="controls">
-                                    <div class="icon" id="skip-prev">
+                                <div id="controls" class="controls">
+                                    <div class="icon skip-prev" id="skip-prev">
                                         <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-skip-previous.svg" alt="">
                                     </div>
-                                    <div class="icon" id="play">
+                                    <div class="icon play" data-id="front-audio-div" id="play">
                                         <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-play-circle-outline.svg" alt="">
                                     </div>
-                                    <div class="icon" id="pause">
+                                    <div class="icon pause" data-id="front-audio-div" id="pause">
                                         <i class="fas fa-pause"></i>
                                     </div>
-                                    <div class="icon" id="skip-next">
+                                    <div class="icon skip-next" id="skip-next">
                                         <img class="lazy" src="<?php echo get_template_directory_uri(); ?>/img/material-skip-next.svg" alt="">
                                     </div>
                                 </div>

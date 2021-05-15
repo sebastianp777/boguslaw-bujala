@@ -85,20 +85,25 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
 
   });
 
-var dataId = $('#controls').data('id');
+  $(".pause").css('display', 'none');
 
-var $source = $("#audiotrack")[0],
-    $track = $("#track"),
-    $progress = $("#progress"),
-    $play = $("#play"),
-    $pause = $("#pause"),
-    $playPause = $("#play, #pause"),
-    $stop = $("#stop"),
-    $mute = $("#mute"),
-    $volume = $("#volume"),
-    $level = $("#level");
-    $skip_prev = $('#skip-prev');
-    $skip_next = $('#skip-next');
+$(".play, .pause").click(function(){
+
+
+  let gobID = $(this).data('id');
+
+  var $source = $('#'+gobID+" .audiotrack")[0],
+    $track = $('#'+gobID+" .track"),
+    $progress = $('#'+gobID+" .progress"),
+    $play = $('#'+gobID+" .play"),
+    $pause = $('#'+gobID+" .pause"),
+    $playPause = $('#'+gobID+" .play, #"+gobID+" .pause"),
+    $stop = $('#'+gobID+" .stop"),
+    $mute = $('#'+gobID+" .mute"),
+    $volume = $('#'+gobID+" .volume"),
+    $level = $('#'+gobID+" .level");
+    $skip_prev = $('#'+gobID+' .skip-prev');
+    $skip_next = $('#'+gobID+' .skip-next');
 
 var totalTime,
     timeBar,
@@ -110,7 +115,18 @@ var totalTime,
 var interval = null;
 
 
-$(document).ready(function(){
+if ($source.paused){
+  $source.play();
+  $pause.show();
+  $play.hide();
+  interval = setInterval(barState, 50);
+}
+else {
+  $source.pause();
+  $play.show();
+  $pause.hide();
+};
+
 
   function barState(){
     if (!$source.ended){
@@ -132,26 +148,6 @@ $(document).ready(function(){
       $source.currentTime = newTime;
       $progress.css({"width": cursorX + "%"});
     };
-  });
-
-  $("#pause").hide();
-
-  function playPause(){
-    if ($source.paused){
-      $source.play();
-      $pause.show();
-      $play.hide();
-      interval = setInterval(barState, 50);
-    }
-    else {
-      $source.pause();
-      $play.show();
-      $pause.hide();
-    };
-  };
-
-  $playPause.click(function(){
-    playPause();
   });
 
   function restart(){
