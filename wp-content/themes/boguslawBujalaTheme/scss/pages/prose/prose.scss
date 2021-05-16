@@ -1,5 +1,5 @@
 
-.poezja {
+.proza {
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         color: $dark-gray;
@@ -15,6 +15,12 @@
         padding-bottom: 2em;
         font-size: 26px;
         line-height: 1.5;
+        max-width: $page-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .default-page {
+        margin-top: 10rem;
     }
     .container-sm {
         max-width: $page-width;
@@ -32,11 +38,13 @@
     .cover-image {
         max-width: 309px;
         object-fit: contain;
+        margin: 0 0 80px;
+        margin-top: calc( -7rem - 50px);
         img {
             border-radius: 20px;
         }
     }
-    .cta-poezja {
+    .cta-proza {
         width: 309px;
         border: 3px solid $gray;
         border-radius: 16px;
@@ -81,7 +89,7 @@
     }
     
     .offset-left {
-        margin-left: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
+        margin-left: calc( ( 100% - #{$page-width} ) / 2 );
         padding-right: calc( ( 100vw - #{$page-width} ) / 2 );
         p {
             padding-left: 3em;
@@ -89,7 +97,7 @@
     }
     
     .offset-right {
-        margin-right: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
+        margin-right: calc( ( 100% - #{$page-width} ) / 2  );
         padding-left: calc( ( 100vw - #{$page-width} ) / 2 );
         p {
             padding-right: 3em;

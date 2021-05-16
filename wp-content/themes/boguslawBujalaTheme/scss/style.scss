@@ -19,6 +19,7 @@
 @import "pages/review";
 
 @import "pages/poetry/poetry";
+@import "pages/prose/prose";
 
 body{
     color: $text-color;
@@ -29,12 +30,12 @@ p{
     font-family: "akagi-pro", sans-serif;
     font-weight: 400;
 }
-.page-elemets{
-  &::before{
-    // content: url('img/page-elemets1.svg');
-    // position: absolute;
-  }
-}
+// .page-elemets{
+//   &::before{
+//     // content: url('img/page-elemets1.svg');
+//     // position: absolute;
+//   }
+// }
 
 .player--div{
     padding: 15px 0 60px;
