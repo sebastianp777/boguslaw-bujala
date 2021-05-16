@@ -23,12 +23,16 @@
         font-size: 26px;
         line-height: 1.5;
     }
-    .container-sm {
+    .default-page {
         max-width: $page-width;
         margin: 0 auto;
         position: relative;
         padding: 0 15px;
-        width: 100%;
+        width: 80%;
+        // @include media-maxw-991 {
+        //     width: 100%;
+        // }
+    
     }
     .wp-block-column {
         padding: 0;
@@ -44,15 +48,17 @@
         }
     }
     .cta-poezja, .cta-proza {
-        width: 309px;
+        max-width: 309px;
+        width: 100%;
         border: 3px solid $gray;
         border-radius: 16px;
         padding-top: 7px;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        cursor:pointer;
+        cursor:pointer;        
         .wp-block-button__link {
-            width: 309px;
+            max-width: 309px;
+            width: 100%;
             color: $dark-gray;
             font-size: 20px;
             line-height: 27px;
@@ -90,12 +96,28 @@
         .wp-block-group__inner-container {
             padding-left: 5em;
         }
+        // @include media-maxw-1440 {
+        //     margin-left: 10%;
+        //     padding-right: 10%;
+        // }
+        // @include media-maxw-1199 {
+        //     margin-left: 0;
+        //     padding-right: 0;
+        // }
     }
     
     .offset-right {
         .wp-block-group__inner-container {
             padding-right: 5em;
         }
+        // @include media-maxw-1440 {
+        //     margin-right: 10%;
+        //     padding-left: 10%;
+        // }
+        // @include media-maxw-1199 {
+        //     margin-right: 0;
+        //     padding-left: 0;
+        // }
     }
     
     .image-offset-right {

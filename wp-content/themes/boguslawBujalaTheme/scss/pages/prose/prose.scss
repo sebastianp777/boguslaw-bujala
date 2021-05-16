@@ -1,4 +1,3 @@
-
 .proza {
     p {
         max-width: $page-width;
@@ -29,8 +28,6 @@
                 }
             }
         }
-        
-
     }
     
     .offset-left {
@@ -42,8 +39,8 @@
     }
     
     .offset-right {
-        margin-right: calc( ( 100% - #{$page-width} ) / 2  );
-        padding-left: calc( ( 100vw - #{$page-width} ) / 2 );
+        margin-right: 10%;
+        padding-left: 10%;
         &.pl-0 {
             padding-left: 0;
         }

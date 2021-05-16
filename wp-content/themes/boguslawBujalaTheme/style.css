@@ -579,12 +579,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 26px;
   line-height: 1.5;
 }
-.poezja .container-sm, .proza .container-sm {
+.poezja .default-page, .proza .default-page {
   max-width: 1354px;
   margin: 0 auto;
   position: relative;
   padding: 0 15px;
-  width: 100%;
+  width: 80%;
 }
 .poezja .wp-block-column, .proza .wp-block-column {
   padding: 0;
@@ -600,7 +600,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
 }
 .poezja .cta-poezja, .poezja .cta-proza, .proza .cta-poezja, .proza .cta-proza {
-  width: 309px;
+  max-width: 309px;
+  width: 100%;
   border: 3px solid #555;
   border-radius: 16px;
   padding-top: 7px;
@@ -609,7 +610,8 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .poezja .cta-poezja .wp-block-button__link, .poezja .cta-proza .wp-block-button__link, .proza .cta-poezja .wp-block-button__link, .proza .cta-proza .wp-block-button__link {
-  width: 309px;
+  max-width: 309px;
+  width: 100%;
   color: #4a4a4a;
   font-size: 20px;
   line-height: 27px;
@@ -1813,8 +1815,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0;
 }
 .proza .offset-right {
-  margin-right: calc( ( 100% - 1354px ) / 2 );
-  padding-left: calc( ( 100vw - 1354px ) / 2 );
+  margin-right: 10%;
+  padding-left: 10%;
 }
 .proza .offset-right.pl-0 {
   padding-left: 0;
