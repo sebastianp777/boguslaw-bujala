@@ -6,12 +6,21 @@
     .offset-left {
         margin-left: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
         padding-right: calc( ( 100vw - #{$page-width} ) / 2 );
+        @include media-maxw-1199 {
+            margin: 0;
+            padding: 2em 5em;
+        }
     }
 
     .offset-right {
         margin-right: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
         padding-left: calc( ( 100vw - #{$page-width} ) / 2 );
+        @include media-maxw-1199 {
+            margin: 0;
+            padding: 2em 5em;
+        }
     }
+
 
     //covers with header next to image, not above. Change order on mobile
     .short-cover {
