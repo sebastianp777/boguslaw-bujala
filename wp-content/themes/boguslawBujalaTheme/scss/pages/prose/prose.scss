@@ -4,18 +4,15 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .default-page {
-        margin-top: 10rem;
-    }
     .cover-image {
         margin: 0 0 80px;
         margin-top: calc( -7rem - 50px);
+        @include media-maxw-1199 {
+            margin: 0 auto;
+        }
     }
     .cta-proza {
         background: $white;
-        &.mt-3 {
-            margin-top: 10rem;
-        }
         &.dark-bg {
             background: $dark-gray;
             .wp-block-button__link {
@@ -28,21 +25,38 @@
                 }
             }
         }
+        @include media-maxw-1199 {
+            max-width: 250px;
+            margin: 2em auto;
+
+        }
     }
 
     .offset-left {
         margin-left: calc( ( 100% - #{$page-width} ) / 2 );
         padding-right: calc( ( 100vw - #{$page-width} ) / 2 );
+        margin-left: -3%; // style Sebastiana? 
+        padding-right: 10%; // style Sebastiana?
         &.pr-0 {
             padding-right: 0;
+        }
+        @include media-maxw-1199 {
+            margin: 0;
+            padding: 2em 5em;
         }
     }
 
     .offset-right {
-        margin-right: -3%;
-        padding-left: 10%;
+        margin-right: calc( ( 100% - #{$page-width} ) / 2 );
+        padding-left: calc( ( 100vw - #{$page-width} ) / 2 );
+        margin-right: -3%; // style Sebastiana? 
+        padding-left: 10%; // style Sebastiana?
         &.pl-0 {
             padding-left: 0;
+        }
+        @include media-maxw-1199 {
+            margin: 0;
+            padding: 2em 5em;
         }
     }
     .special-container{
@@ -57,10 +71,27 @@
     .low-block-header {
         text-transform: uppercase;
         padding: 0;
-        p {
-            padding: 0;
-            font-size: 40px;
+        @include media-maxw-1199 {
+            margin: 0;
         }
+        p {
+            padding: 10px;
+            font-size: 40px;
+            @include media-maxw-1650{
+                font-size: 31px;
+            }
+            @include media-maxw-1440{
+                font-size: 28px;
+            }
+            @include media-maxw-1199 {
+                padding: 1em;
+                margin: 0;
+            }
+            @include media-maxw-991{
+                font-size: 25px;
+              }
+        }
+        
     }
     .offset-right .wp-block-media-text .wp-block-media-text__content {
         padding: 0 1rem 0 4rem;
