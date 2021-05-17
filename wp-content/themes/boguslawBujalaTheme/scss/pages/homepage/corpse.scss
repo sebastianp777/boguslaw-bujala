@@ -1,6 +1,15 @@
 .homepage__corpse{
   padding-top: 150px;
   display: block;
+  @include media-maxw-767{
+    padding-top: 50px;
+  }
+  .row{
+    flex-wrap: nowrap;
+    @include media-maxw-767{
+      flex-direction: column-reverse;
+    }
+  }
   .text-inner{
     padding-left: 140px;
     display: flex;
@@ -11,24 +20,54 @@
       width: 60%;
       padding-left: 90px;
     }
+    @include media-maxw-767{
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      div{
+        margin: 0 auto;
+      }
+    }
     h2{
       font-weight: bold;
       line-height: 58px;
       color: #4A4A4A;
       text-transform: uppercase;
+      @media (max-width:1600px){
+        font-size: 34px;
+      }
+      @include media-maxw-1199{
+        font-size: 28px;
+      }
       @include media-maxw-991{
         font-size: 25px;
         line-height: 25px;
         margin-bottom: 25px;
       }
+      @include media-maxw-767{
+        margin: 0 auto 25px;
+      }
     }
-    p{
+    p, h6{
       font-size: 30px;
       line-height: 46px;
       color: #4A4A4A;
+      @media (max-width:1600px){
+        font-size: 24px;
+      }
+      @include media-maxw-1199{
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 350px;
+      }
       @include media-maxw-991{
         font-size: 15px;
         line-height: 20px;
+      }
+    }
+    h6{
+      @include media-maxw-767{
+        text-align: right;
       }
     }
   }
@@ -39,11 +78,24 @@
       padding: 6px 35px;
       margin-top: 20px;
     }
+    @include media-maxw-767{
+      margin: 30px auto;
+    }
   }
   img{
     object-fit: cover;
+    max-width: 830px;
+    @media (max-width:1500px){
+      max-width: 50%;
+    }
     @include media-maxw-991{
       width: 40%;
+    }
+    @include media-maxw-767{
+      width: 80%;
+      margin: 0 auto;
+      height: 280px;
+      max-width: 100%;
     }
   }
 }

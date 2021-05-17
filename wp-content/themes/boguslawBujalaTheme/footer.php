@@ -3,13 +3,16 @@
 <footer class="footer">
     <div class="container-footer">
         <div class="container-footer__div">
-            <h2><?php the_field('footer_heading', 15); ?></h2>
+            <h2 class="desktop-small"><?php the_field('footer_heading', 15); ?></h2>
             <div class="row">
-                <?php $footer_image = get_field( 'footer_image', 15 );
-                if ( $footer_image ) :
-                    $imageurl = wp_get_attachment_image_url($footer_image, 'full');?>
-                    <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
-                <?php endif;?>
+                <div class="name-with-img">
+                    <?php $footer_image = get_field( 'footer_image', 15 );
+                    if ( $footer_image ) :
+                        $imageurl = wp_get_attachment_image_url($footer_image, 'full');?>
+                        <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
+                    <?php endif;?>
+                    <h2 class="mobile-small"><?php the_field('footer_heading', 15); ?></h2>
+                </div>
                 <div class="footer_text">
                     <?php the_field('footer_text', 15); ?>
                 </div>

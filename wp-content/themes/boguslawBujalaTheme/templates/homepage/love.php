@@ -1,4 +1,6 @@
 <?php $loveImage = get_field( 'homepage_love_image' ); ?>
+<?php $homepage_love_btn = get_field( 'homepage_love_btn' ); ?>
+
 <section class="homepage__love">
         <div class="homepage__love__inner">
             <div class="homepage__love__inner__all">
@@ -97,7 +99,6 @@
                                 </div>
                             </div>
                         </div>
-                        <?php $homepage_love_btn = get_field( 'homepage_love_btn' ); ?>
                         <?php if ( $homepage_love_btn ) { ?>
                                 <a class="btn player-btn desktop-small" href="<?php echo $homepage_love_btn['url']; ?>"><?php echo $homepage_love_btn['title']; ?></a>
                         <?php } ?>

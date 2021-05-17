@@ -2,16 +2,33 @@
     margin-top: 140px;
     background: #DEDEDE;
     padding: 140px 0 60px;
-    @include media-maxw-991{
+    @include media-maxw-1199{
         padding: 50px 0 30px;
+    }
+    @include media-maxw-767{
+        margin-top: 70px;
     }
     .container-footer__div{
         padding: 0 50px;
+        @include media-maxw-767{
+            padding: 0 20px;
+        }
         img{
             object-fit: cover;
             @include media-maxw-991{
                 width: 150px;
-              }
+            }
+            @include media-maxw-767{
+                margin: 0 auto 30px;
+            }
+        }
+        .row{
+            @include media-maxw-767{
+                flex-direction: column;
+                .name-with-img{
+                    text-align: center;
+                }
+            }
         }
     }
     h2{
@@ -20,22 +37,45 @@
         line-height: 46px;
         color: #4A4A4A;
         margin-bottom: 80px;
+        @media (max-width:1600px){
+            font-size: 34px;
+        }
+        @include media-maxw-1199{
+            font-size: 28px;
+        }
         @include media-maxw-991{
             font-size: 25px;
             line-height: 25px;
             margin-bottom: 25px;
-          }
+        }
+        @include media-maxw-767{
+            margin: 0 auto 25px;
+        }
     }
     .footer_text{
         max-width: 875px;
         margin-left: auto;
+        @media (max-width:1350px){
+            max-width: 70%;
+        }
+        @include media-maxw-1199{
+            max-width: 60%;
+        }
         @include media-maxw-991{
             max-width: 380px;
+            margin: 0 auto;
         }
         p{
             font-size: 30px;
             line-height: 46px;
             color: #4A4A4A;
+            @media (max-width:1600px){
+                font-size: 24px;
+              }
+            @include media-maxw-1199{
+                font-size: 20px;
+                line-height: 30px;
+            }
             @include media-maxw-991{
                 font-size: 15px;
                 line-height: 20px;
@@ -57,9 +97,16 @@
         font-size: 20px;
         line-height: 27px;
         text-transform: uppercase;
+        @include media-maxw-1199{
+            font-size: 14px;
+            height: 46px;
+        }
         @include media-maxw-991{
             font-size: 10px;
             height: 46px;
+        }
+        @include media-maxw-767{
+            margin-top: 30px;
         }
         a{
             color: #fff;
@@ -96,8 +143,14 @@
             max-width: 710px;
             justify-content: space-between;
             width: 100%;
+            @include media-maxw-1199{
+                max-width: 520px;
+            }
             @include media-maxw-991{
                 max-width: 320px;
+            }
+            @include media-maxw-767{
+                display: none;
             }
         }
     }
