@@ -1,28 +1,37 @@
 
 .poezja, .proza {
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-        color: $dark-gray;
-    }    
-    h2 {
-        text-transform: uppercase;
-        font-size: 40px;
-        line-height: 58px;
-        font-weight: bold;
-        padding: 2rem 0;
+    article{
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            color: $dark-gray;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 58px;
+            font-weight: bold;
+            padding: 2rem 0;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: bold;
+            padding: 1.5rem 0;
+        }
+        p {
+             padding-bottom: 2em;
+            font-size: 26px;
+            line-height: 1.5;
+        }
+        .cta-spec{
+            margin-top: 0;
+        }
+        .img-proza-margin{
+            margin-bottom: 160px;
+        }
     }
-    h3 {
-        text-transform: uppercase;
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: bold;
-        padding: 1.5rem 0;
-    }
-    p {
-        padding-bottom: 2em;
-        font-size: 26px;
-        line-height: 1.5;
-    }
+
     .default-page {
         max-width: $page-width;
         margin: 0 auto;
@@ -32,13 +41,13 @@
         // @include media-maxw-991 {
         //     width: 100%;
         // }
-    
+
     }
     .wp-block-column {
         padding: 0;
     }
     .wp-block-group {
-        padding: 7rem 0;
+        padding: 5rem 0;
     }
     .cover-image {
         max-width: 309px;
@@ -55,7 +64,7 @@
         padding-top: 7px;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        cursor:pointer;        
+        cursor:pointer;
         .wp-block-button__link {
             max-width: 309px;
             width: 100%;
@@ -91,7 +100,7 @@
     .alignfull img {
         width: 100vw;
     }
-    
+
     .offset-left {
         .wp-block-group__inner-container {
             padding-left: 5em;
@@ -105,7 +114,7 @@
         //     padding-right: 0;
         // }
     }
-    
+
     .offset-right {
         .wp-block-group__inner-container {
             padding-right: 5em;
@@ -119,7 +128,7 @@
         //     padding-left: 0;
         // }
     }
-    
+
     .image-offset-right {
         padding: 0;
         margin: 0;
@@ -149,7 +158,7 @@
     }
     .ml-0 {
         margin-left: 0;
-    }  
+    }
     .mr-0 {
         margin-right: 0;
     }
@@ -158,10 +167,10 @@
     }
     .pb-0 {
         padding-bottom: 0;
-    }  
+    }
     .pl-0 {
         padding-left: 0;
-    }  
+    }
     .pr-0 {
         padding-right: 0;
     }

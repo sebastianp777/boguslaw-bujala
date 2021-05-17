@@ -168,18 +168,26 @@
 
 @include media-minw-992{
     .mobile{
-        display: none;
+        display: none!important;
     }
     .desktop{
-        display: block;
+        display: block!important;
+    }
+}
+@include media-minw-992{
+    .mobile-flex{
+        display: none!important;
+    }
+    .desktop-flex{
+        display: flex!important;
     }
 }
 @include media-minw-768{
     .mobile-small{
-        display: none;
+        display: none!important;
     }
     .desktop-small{
-        display: block;
+        display: block!important;
     }
 }
 
@@ -398,18 +406,26 @@
 }
 @include media-maxw-991{
     .mobile{
-        display: block;
+        display: block!important;
     }
     .desktop{
-        display: none;
+        display: none!important;
+    }
+}
+@include media-maxw-991{
+    .mobile-flex{
+        display: flex!important;
+    }
+    .desktop-flex{
+        display: none!important;
     }
 }
 @include media-maxw-767{
     .mobile-small{
-        display: block;
+        display: block!important;
     }
     .desktop-small{
-        display: none;
+        display: none!important;
     }
 }
 

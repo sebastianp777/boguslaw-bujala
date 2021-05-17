@@ -48,3 +48,13 @@
     </div>
 </header>
 
+<header class="header clear mobile-menu" role="banner">
+
+<!-- nav -->
+<nav class="top-nav" id="top-nav">
+<a href="<?php echo home_url(); ?>"><img class="nav__logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt=""></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <?php html5blank_nav_mobile(); ?>
+ </nav>
+</header>

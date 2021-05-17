@@ -1,22 +1,25 @@
 
 .poezja {
+    .container-md-hero{
+        padding: 0;
+    }
     .offset-left {
         margin-left: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
         padding-right: calc( ( 100vw - #{$page-width} ) / 2 );
     }
-    
+
     .offset-right {
         margin-right: calc( ( 100% - #{$page-width} ) / 2 + #{$poetry-offset} );
         padding-left: calc( ( 100vw - #{$page-width} ) / 2 );
     }
-        
+
     //covers with header next to image, not above. Change order on mobile
     .short-cover {
         .wp-block-group__inner-container {
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: auto 2fr;
-            
+
             h2 {
                 // width: 66.66%;
                 grid-column: 2 / 3;
@@ -36,7 +39,7 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: auto 2fr;
-            
+
             h2 {
                 // width: 66.66%;
                 grid-column: 1 / 2;

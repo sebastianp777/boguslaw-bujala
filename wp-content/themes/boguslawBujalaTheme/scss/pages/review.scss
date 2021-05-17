@@ -124,6 +124,11 @@
           font-size: 26px;
           line-height: 36px;
         }
+        h5{
+          font-size: 26px;
+          line-height: 36px;
+          margin: 20px 0;
+        }
       }
     }
   }
@@ -132,4 +137,9 @@
     margin-top: 30px;
     cursor: pointer;
   }
+  .br-space{
+    margin-bottom: 20px;
+    display: block;
+  }
+
 }

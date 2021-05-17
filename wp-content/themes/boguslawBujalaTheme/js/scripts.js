@@ -21,6 +21,34 @@
           $("#"+dataDiv).removeClass('active');
           $("#"+dataID).slideUp('slow');
         });
+
+        $('.custom-click-show-1 a').click(function(){
+          $(this).toggleClass('clicked');
+          if($(this).hasClass('clicked')){
+            $('.hideable-text1').slideDown('slow');
+          }else{
+            $('.hideable-text1').slideUp('slow');
+          }
+        });
+
+        $('.custom-click-show-2 a').click(function(){
+          $(this).toggleClass('clicked');
+          if($(this).hasClass('clicked')){
+            $('.hideable-text-2').slideDown('slow');
+          }else{
+            $('.hideable-text-2').slideUp('slow');
+          }
+        });
+
+        $('.custom-click-show-less-1 a').click(function(){
+          $('.custom-click-show-1 a').removeClass('clicked');
+          $('.hideable-text1').slideUp('slow');
+        });
+        $('.custom-click-show-less-2 a').click(function(){
+          $('.custom-click-show-2 a').removeClass('clicked');
+          $('.hideable-text-2').slideUp('slow');
+        });
+
       });
 
     });
@@ -71,7 +99,7 @@ var HomeCompanies = new Swiper('.homepage__publications .swiper-container', {
       breakpoints: {
         767: {
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 20,
         },
         992: {
           slidesPerView: 4,
@@ -195,7 +223,7 @@ else {
   $mute.click(function(){
     mute();
   });
-
+s
   $volume.click(function(e){
     var volumeBar = $volume.width();
     var cursorX = e.pageX - $volume.offset().left;

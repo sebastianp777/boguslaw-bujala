@@ -29,7 +29,7 @@
             }
         }
     }
-    
+
     .offset-left {
         margin-left: calc( ( 100% - #{$page-width} ) / 2 );
         padding-right: calc( ( 100vw - #{$page-width} ) / 2 );
@@ -37,12 +37,18 @@
             padding-right: 0;
         }
     }
-    
+
     .offset-right {
-        margin-right: 10%;
+        margin-right: -3%;
         padding-left: 10%;
         &.pl-0 {
             padding-left: 0;
+        }
+    }
+    .special-container{
+        .wp-block-group__inner-container{
+            max-width: 1140px;
+            margin: 0 auto;
         }
     }
     .block-align-right .cta-proza {

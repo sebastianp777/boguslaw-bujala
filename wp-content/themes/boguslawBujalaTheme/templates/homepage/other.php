@@ -2,7 +2,9 @@
         <div class="homepage__other__inner">
             <div class="homepage__other__inner__div">
                 <h2 class="header--h2"><?php the_field('homepage_other_heading'); ?></h2>
-                <p><?php the_field('homepage_other_text'); ?></p>
+                <div class="desktop-small"><?php the_field('homepage_other_text'); ?></div>
+                <div class="mobile-small"><?php the_field('homepage_other_text_mobile'); ?></div>
+
                 <?php $otherImage = get_field( 'homepage_other_image' );
                 if ( $otherImage ) :
                     $imageurl = wp_get_attachment_image_url($otherImage, 'full');?>

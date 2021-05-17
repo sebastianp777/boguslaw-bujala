@@ -5,7 +5,7 @@
 		<?= get_template_part('inc/hero__section--global'); ?>
 
 		<section class="default-page">
-				<div class="container-sm">
+				<div class="container-md-hero">
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 

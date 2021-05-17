@@ -9,20 +9,48 @@
         line-height: 58px;
         text-transform: uppercase;
         font-weight: bold;
+        @media (max-width:1600px){
+          font-size: 34px;
+        }
+        @include media-maxw-1199{
+          font-size: 28px;
+        }
         @include media-maxw-991{
           font-size: 25px;
           line-height: 25px;
           margin-bottom: 25px;
+        }
+        @include media-maxw-767{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
         }
       }
       p{
         font-size: 30px;
         line-height: 46px;
         max-width: 600px;
+        @media (max-width:1600px){
+          font-size: 24px;
+        }
+        @include media-maxw-1199{
+          font-size: 20px;
+          line-height: 30px;
+          max-width: 350px;
+        }
         @include media-maxw-991{
           font-size: 15px;
           max-width: 290px;
           line-height: 20px;
+        }
+
+      }
+      h6{
+        @include media-maxw-767{
+          text-align: right;
+          font-size: 15px;
+          line-height: 20px;
+          margin-top: 20px;
         }
       }
       h2{
@@ -38,23 +66,64 @@
           line-height: 20px;
           padding: 4px 51px;
         }
+        @include media-maxw-767{
+          position: relative;
+          order: 3;
+          color: #6D6875;
+          background: #fff;
+          margin: 30px 0;
+          font-weight: 300;
+        }
       }
       &:first-child{
         background: #6D6875;
         color: #fff;
         padding: 115px 0 90px 250px;
         width: 65%;
+        @media (max-width:1600px){
+          padding: 80px 0 90px 165px;
+        }
+        @media (max-width:1500px){
+          padding: 80px 0 90px 65px;
+        }
         @include media-maxw-991{
           padding: 80px 0 90px 65px;
           width: 75%;
+        }
+        @include media-maxw-767{
+          width: 100%;
+          padding: 50px 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
       img{
         position: absolute;
         top: 95px;
         right: 0;
+        @media (max-width:1800px){
+          width: 750px;
+          top: 215px;
+        }
+        @media (max-width:1600px){
+          top: 95px;
+        }
+        @media (max-width:1400px){
+          width: 550px;
+          top: 150px;
+        }
+        @include media-maxw-1199{
+          top: 100px;
+        }
         @include media-maxw-991{
           width: 375px;
+        }
+        @include media-maxw-767{
+          position: relative;
+          order: 4;
+          top: 0;
+          margin-bottom: -140px;
         }
       }
     }

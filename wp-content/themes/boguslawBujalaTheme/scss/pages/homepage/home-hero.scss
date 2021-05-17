@@ -6,6 +6,9 @@
     @include media-maxw-991{
       height: 580px;
     }
+    @include media-maxw-767{
+      height: 669px;
+    }
     &__bg{
       position: relative;
       width: 100%;
@@ -21,6 +24,9 @@
       @include media-maxw-991{
         height: 580px;
       }
+      @include media-maxw-767{
+        height: 669px;
+      }
       &__h2{
         font-size: 40px;
         color: #fff;
@@ -29,6 +35,9 @@
         @include media-maxw-991{
           font-size: 25px;
           line-height: 33px;
+        }
+        @include media-maxw-767{
+          margin: 30px 0;
         }
       }
       .hero-section--text-div{
@@ -42,6 +51,9 @@
           top: 43%;
           padding: 30px 0;
         }
+        @include media-maxw-767{
+          top: 100px;
+        }
         &--p{
           display: flex;
           margin-top: 40px;
@@ -49,6 +61,10 @@
           @include media-maxw-991{
             padding: 0 40px;
             margin-top: 10px;
+          }
+          @include media-maxw-767{
+            flex-direction: column;
+            text-align: center;
           }
           p{
             font-size: 26px;
@@ -65,6 +81,9 @@
           @include media-maxw-991{
             font-size: 16px;
             padding-right: 40px;
+          }
+          @include media-maxw-767{
+            margin-top: 30px;
           }
         }
       }
