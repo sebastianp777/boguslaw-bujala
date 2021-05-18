@@ -55,12 +55,16 @@ if ( $audio_video_heroimage ) :
                                             <?php $image = get_sub_field( 'image' );
                                                 if ( $image ) :
                                                     $imageurl = wp_get_attachment_image_url($image, 'full');?>
-                                                    <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
+                                                    <img class="lazy lazy-loading book-front desktop-small" data-src="<?= $imageurl ?>" alt=""/>
                                             <?php endif;?>
-                                            <div class="audio-with-text col-md-8">
+                                            <div class="audio-with-text col-sm-8">
                                                 <div class="audio__div__description">
                                                     <div class="audio-description">
                                                         <?= the_sub_field('text', $audio_video); ?>
+                                                       <?php if ( $image ) :
+                                                             $imageurl = wp_get_attachment_image_url($image, 'full');?>
+                                                             <img class="lazy lazy-loading book-front mobile-small" data-src="<?= $imageurl ?>" alt=""/>
+                                                         <?php endif;?>
                                                     </div>
                                                 </div>
                                                 <div class="embed-container">

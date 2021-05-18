@@ -157,6 +157,8 @@
         flex-wrap: wrap;
         transition: top .75s ease-in;
         background: url('img/main-image-top-nav.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .menu{
             list-style: none;

@@ -29,14 +29,23 @@ $getReview = get_posts(array(
                                         <?php the_field('reviews_text', $getReview); ?>
                                     </div>
                                      <?php if(get_field('reviews_read_the_review', $getReview)): ?>
-                                        <a class="btn read-more" data-id="<?= $getReview->ID ?>">Przeczytaj Recenzję</a>
+                                        <a class="btn read-more desktop-inline" data-id="<?= $getReview->ID ?>">Przeczytaj Recenzję</a>
+                                    <?php endif;?>
+                                    <?php if(get_field('reviews_read_the_review', $getReview)): ?>
+                                        <a class="btn read-more mobile--spec" data-id="<?= $getReview->ID ?>">Więcej</a>
                                     <?php endif;?>
                                 </div>
-                                <?php $reviews_img = get_field( 'reviews_img', $getReview );
-                                if ( $reviews_img ) :
-                                    $imageurl = wp_get_attachment_image_url($reviews_img, 'full');?>
-                                    <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
-                                <?php endif;?>
+                                <div class="div-in">
+                                    <?php $reviews_img = get_field( 'reviews_img', $getReview );
+                                    if ( $reviews_img ) :
+                                        $imageurl = wp_get_attachment_image_url($reviews_img, 'full');?>
+                                        <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
+                                    <?php endif;?>
+                                    <?php if(get_field('reviews_read_the_review', $getReview)): ?>
+                                        <a class="btn read-more mobile" data-id="<?= $getReview->ID ?>">Więcej</a>
+                                    <?php endif;?>
+
+                                </div>
                             </div>
                         </div>
                     </div>

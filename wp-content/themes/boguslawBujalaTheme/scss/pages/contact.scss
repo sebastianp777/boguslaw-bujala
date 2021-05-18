@@ -9,15 +9,37 @@
     font-weight: 400;
     padding: 100px 0 50px;
     text-transform: uppercase;
+    @media (max-width:1600px){
+      font-size: 34px;
+    }
+    @include media-maxw-1199{
+      font-size: 28px;
+    }
+    @include media-maxw-991{
+      font-size: 25px;
+      line-height: 25px;
+    }
+    @include media-maxw-767{
+      padding-top: 160px;
+    }
   }
   .wpcf7{
     max-width: 875px;
     margin: 0 auto;
+    @include media-maxw-991{
+      max-width: 80%;
+    }
     label{
       margin: 5px 0 40px;
       font-size: 18px;
       color: #fff;
       display: block;
+      @include media-maxw-991{
+        font-size: 15px;
+      }
+      @include media-maxw-767{
+        margin: 5px 0 20px;
+      }
     }
     .form-input{
       width: 100%;
@@ -29,14 +51,23 @@
       line-height: 22px;
       color: #000;
       background-color: #fff;
+      @include media-maxw-991{
+        height: 50px;
+      }
       @include media-maxw-767{
-          height: 50px;
           font-size: 14px;
+          height: 30px;
       }
     }
     .div-client-message{
       textarea{
         height: 140px;
+        @include media-maxw-991{
+          height: 90px;
+        }
+        @include media-maxw-767{
+          height: 50px;
+        }
       }
     }
 
@@ -55,6 +86,12 @@
       text-align: center;
       border-radius: 15px;
       margin: 0 auto;
+      @include media-maxw-991{
+        padding: 4px 5px;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 8px;
+      }
     }
 
 
@@ -67,6 +104,18 @@
     height: 440px;
     object-fit: cover;
     width: 100%;
+    @include media-maxw-991{
+      height: 225px;
+    }
+    @include media-maxw-767{
+      height: 0;
+    }
+  }
+  @include media-maxw-991{
+    height: 225px;
+  }
+  @include media-maxw-767{
+    height: 0;
   }
 }
 .page-template-template-contact-php{

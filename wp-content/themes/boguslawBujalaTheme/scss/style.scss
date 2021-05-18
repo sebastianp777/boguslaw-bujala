@@ -98,6 +98,9 @@ p{
     .icon-muted{
         width: 26px;
       }
+      @include media-maxw-1199{
+        height: 50px;
+      }
   }
 
   #controls > div {
@@ -128,6 +131,10 @@ p{
         color: #4A4A4A;
         font-size: 12px;
         margin-top: -7px;
+        @include media-maxw-1199{
+          font-size: 8px;
+          padding: 3.5px 4.3px;
+        }
     }
   }
   #mute {
