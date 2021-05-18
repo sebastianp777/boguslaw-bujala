@@ -284,6 +284,8 @@
             }
         }
         @include media-maxw-991{
+            max-width: 140px;
+            margin: 0 auto;
             img{
                 width: 140px;
             }

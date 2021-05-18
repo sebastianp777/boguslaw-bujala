@@ -179,18 +179,20 @@
                 padding: 0 10px;
                 transition: 1s all;
                 text-decoration: none;
-                font-size: 30px;
+                font-size: 23px;
                 color: #fff;
                 text-align: center;
                 text-transform: uppercase;
                 line-height: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+                width: 100%;
 
                 &:focus, &:hover, &:active{
                     color: #20232d
                 }
             }
             li{
+                width: 100%;
                 &:first-child{
                     margin-top: 40px;
                 }

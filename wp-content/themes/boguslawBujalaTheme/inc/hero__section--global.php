@@ -13,7 +13,7 @@
                     if ( $heroGlobImage1 ) : ?>
                     <div class="row row--global--default-page">
                         <?php $imageurl = wp_get_attachment_image_url($heroGlobImage1, 'full');?>
-                        <div class="img-with-button">
+                        <div class="img-with-button desktop-small">
                             <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
                             <a class="btn" href="#">Afabulacje<br/> i aliteracje</a>
                         </div>
@@ -21,13 +21,19 @@
                         <div class="hero-section--text-div--p">
                             <div class=""><?php the_field('hero_image_global_text_1'); ?></div>
                         </div>
-                        <?php if ( $heroGlobImage2 ) :
-                            $imageurl2 = wp_get_attachment_image_url($heroGlobImage2, 'full');?>
-                            <div class="img-with-button">
-                                <img class="lazy lazy-loading" data-src="<?= $imageurl2 ?>" alt=""/>
-                                <a class="btn" href="#">Post(a)<br/>Romana</a>
+                        <div class="all-div-inner">
+                            <div class="img-with-button mobile-small">
+                                <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
+                                <a class="btn" href="#">Afabulacje<br/> i aliteracje</a>
                             </div>
-                        <?php endif;?>
+                            <?php if ( $heroGlobImage2 ) :
+                                $imageurl2 = wp_get_attachment_image_url($heroGlobImage2, 'full');?>
+                                <div class="img-with-button">
+                                    <img class="lazy lazy-loading" data-src="<?= $imageurl2 ?>" alt=""/>
+                                    <a class="btn" href="#">Post(a)<br/>Romana</a>
+                                </div>
+                            <?php endif;?>
+                        </div>
                     </div>
                     <?php elseif(get_field('hero_image_global_text_2')):?>
                         <div class="hero-section--text-div--p">
