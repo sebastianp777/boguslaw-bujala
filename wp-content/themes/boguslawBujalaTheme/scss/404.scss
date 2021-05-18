@@ -24,12 +24,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @include media-maxw-767 {
+                font-size: 160px;
+                font-size: 40vw;
+            }
             h1{
                 font-size: 350px;
                 line-height: 466px;
                 color: #fff;
                 margin-block-start: 0em;
                 margin-block-end: 0em;
+                @include media-maxw-767 {
+                    font-size: 160px;
+                    font-size: 40vw;
+                }
             }
         }
 
