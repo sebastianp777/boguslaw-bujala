@@ -10,7 +10,7 @@
                     $imageurl = wp_get_attachment_image_url($otherImage, 'full');?>
                     <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
                  <?php endif;?>
-                 <a class="btn" href="/boguslaw-bujala/poezja/">Dalej</a>
+                 <a class="btn" href="/boguslaw-bujala/proza/#post-romana">Dalej</a>
             </div>
         </div>
 </section>
