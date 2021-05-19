@@ -15,6 +15,13 @@
 	Theme Support
 \*------------------------------------*/
 
+
+
+@ini_set( 'upload_max_size' , '120M' );
+@ini_set( 'post_max_size', '120M');
+
+
+
 if (!isset($content_width)) {
     $content_width = 900;
 }

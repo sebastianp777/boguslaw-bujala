@@ -69,6 +69,33 @@
 
         }
     }
+    .block-align-right{
+        &--change{
+            @include media-maxw-991{
+                .wp-block-columns{
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    .wp-block-column{
+                        padding: 0;
+                        margin: 0;
+                        &--img{
+                            .cover-image, .cta-poezja.cta-spec{
+                                text-align: left;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    .wp-block-image{
+                        text-align: left!important;
+                        margin-left: unset!important;
+                    }
+                    .has-text-align-right{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
     .negative-margin{
         .wp-block-group__inner-container{
             .wp-block-image.size-large {

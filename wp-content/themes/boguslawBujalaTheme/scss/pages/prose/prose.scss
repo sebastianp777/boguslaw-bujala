@@ -108,12 +108,12 @@
                 padding-top: 50px;
             }
             @include media-maxw-767{
-                margin-top: 80px;
+                margin-top: 180px;
             }
         }
         .wp-block-column--text{
             @include media-maxw-767{
-                margin-top: 40px;
+                margin-top: 0px;
             }
         }
     }
@@ -129,6 +129,7 @@
         p {
             padding: 10px;
             font-size: 40px;
+            max-width: 100%;
             @include media-maxw-1650{
                 font-size: 31px;
             }
@@ -307,6 +308,7 @@
             }
             @include media-maxw-767{
                 margin-top: 50px;
+                padding: 2em 2em;
                 .cover-image{
                     left: 14%;
                     top: -15%;
@@ -314,6 +316,11 @@
                 }
                 .wp-block-column--text{
                     margin-top: 60px;
+                }
+                .proza-headin-mobile{
+                    position: absolute;
+                    top: 4%;
+                    right: 25%;
                 }
             }
         }
@@ -438,4 +445,9 @@
     }
 }
 
-
+.proza-headin-mobile{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}

@@ -42,7 +42,7 @@
         margin: -30px auto 0;
         height: 150px;
       }
-      iframe{
+      iframe, video{
         width: 790px;
         height: 450px;
         @include media-minw-992-maxw-1440{
@@ -401,6 +401,7 @@
     @include media-maxw-991{
       font-size: 25px;
       line-height: 25px;
+      padding: 0 0 40px 0px;
     }
   }
 }

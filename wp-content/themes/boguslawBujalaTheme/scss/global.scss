@@ -201,6 +201,12 @@
     .desktop-small-flex{
         display: flex!important;
     }
+    .mobile-small-grid{
+        display: none!important;
+    }
+    .desktop-small-grid{
+        display: grid!important;
+    }
 }
 
 @include media-maxw-767 {
@@ -454,6 +460,12 @@
         display: flex!important;
     }
     .desktop-small-flex{
+        display: none!important;
+    }
+    .mobile-small-grid{
+        display: grid!important;
+    }
+    .desktop-small-grid{
         display: none!important;
     }
 }

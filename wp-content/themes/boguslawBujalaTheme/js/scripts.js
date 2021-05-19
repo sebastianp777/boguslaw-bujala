@@ -212,18 +212,18 @@ else {
   function mute(){
     if ($source.muted){
       $source.muted = false;
-      $(".icon-muted").attr("src","/wp-content/themes/boguslawBujalaTheme/img/feather-volume-1.svg");
+      $(".icon-muted").attr("src","https://dev.trafero.pl/boguslaw-bujala/wp-content/themes/boguslawBujalaTheme/img/feather-volume-1.svg");
     }
     else {
       $source.muted = true;
-      $(".icon-muted").attr("src","/wp-content/themes/boguslawBujalaTheme/img/volume-mute.svg");
+      $(".icon-muted").attr("src","https://dev.trafero.pl/boguslaw-bujala/wp-content/themes/boguslawBujalaTheme/img/volume-mute.svg");
     };
   };
 
   $mute.click(function(){
     mute();
   });
-s
+
   $volume.click(function(e){
     var volumeBar = $volume.width();
     var cursorX = e.pageX - $volume.offset().left;

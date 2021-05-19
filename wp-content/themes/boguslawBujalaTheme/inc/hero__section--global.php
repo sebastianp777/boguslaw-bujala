@@ -7,6 +7,7 @@
 <section class="hero-section hero-section--global">
     <div class="hero-section__bg lazy" style="background-image: url(<?= $url ?>); ">
         <div class="hero-section--text-div">
+            <h2 class="hero-section__bg__h2"><?= the_title(); ?></h2>
             <div class="container-md-hero">
                 <?php $heroGlobImage1 = get_field( 'hero_image_global_image_1' );
                       $heroGlobImage2 = get_field( 'hero_image_global_image_2' );
@@ -15,7 +16,7 @@
                         <?php $imageurl = wp_get_attachment_image_url($heroGlobImage1, 'full');?>
                         <div class="img-with-button desktop-small">
                             <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
-                            <a class="btn" href="#">Afabulacje<br/> i aliteracje</a>
+                            <a class="btn" href="#afabulacje-i-aliteracje">Afabulacje<br/> i aliteracje</a>
                         </div>
 
                         <div class="hero-section--text-div--p">
@@ -24,13 +25,13 @@
                         <div class="all-div-inner">
                             <div class="img-with-button mobile-small">
                                 <img class="lazy lazy-loading" data-src="<?= $imageurl ?>" alt=""/>
-                                <a class="btn" href="#">Afabulacje<br/> i aliteracje</a>
+                                <a class="btn" href="#afabulacje-i-aliteracje">Afabulacje<br/> i aliteracje</a>
                             </div>
                             <?php if ( $heroGlobImage2 ) :
                                 $imageurl2 = wp_get_attachment_image_url($heroGlobImage2, 'full');?>
                                 <div class="img-with-button">
                                     <img class="lazy lazy-loading" data-src="<?= $imageurl2 ?>" alt=""/>
-                                    <a class="btn" href="#">Post(a)<br/>Romana</a>
+                                    <a class="btn" href="#post-romana">Post(a)<br/>Romana</a>
                                 </div>
                             <?php endif;?>
                         </div>

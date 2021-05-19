@@ -162,3 +162,17 @@ p{
   #controls:hover #volume {
     visibility: visible;
   }
+.page-id-22{
+  .hero-section--global .hero-section__bg{
+    @include media-maxw-767{
+      height: 576px;
+    }
+  }
+}
+.page-id-24{
+  .hero-section--global .hero-section__bg{
+    @include media-maxw-767{
+      height: 776px;
+    }
+  }
+}

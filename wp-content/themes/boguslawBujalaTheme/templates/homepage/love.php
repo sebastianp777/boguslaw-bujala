@@ -29,9 +29,7 @@
 
                 <div class="player--div audio__div" id="front-audio-div">
                     <audio id="audiotrack" class="audiotrack" preload="auto" id="<?= $audio_video->ID ?>">
-                        <source src="http://tobiasbogliolo.com/assets/media/verdi.ogg" type="audio/ogg">
-                        <source src="http://tobiasbogliolo.com/assets/media/verdi.mp3" type="audio/mpeg">
-                        <source src="http://tobiasbogliolo.com/assets/media/verdi.wa" type="audio/wav">
+                        <source src="https://dev.trafero.pl/boguslaw-bujala/wp-content/uploads/2021/05/1992_Radio_Lodz_wywiad_z_BB_audio.mp3" type="audio/mpeg">
                     </audio>
                     <div class="player-icons-left">
                             <div id="controls" class="desktop-flex">

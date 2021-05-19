@@ -23,6 +23,7 @@ if ( $audio_video_heroimage ) :
     <div class="audio-video-hero-image" style="background-image: url(<?= $audiovideourl ?>);"></div>
         <?php if ($audio_video) :?>
             <div class="audio-video__section__inner">
+                <h2 class="hero-section__bg__h2"><?= the_title(); ?></h2>
                 <?php foreach ($audio_video as $audio_video) :
                     if(get_field('audio_video_post_type', $audio_video) == 'video'):
                         if ( have_rows( 'audio_video_post_video', $audio_video ) ) :
@@ -39,7 +40,15 @@ if ( $audio_video_heroimage ) :
                                             </div>
                                         </div>
                                         <div class="embed-container">
-                                            <?php the_sub_field('link', $audio_video); ?>
+                                            <?php if ( get_sub_field( 'link', $audio_video ) ) : ?>
+                                                <?php the_sub_field('link', $audio_video); ?>
+                                            <?php endif; ?>
+
+                                            <?php if ( get_sub_field( 'file', $audio_video ) ) : ?>
+                                                <video width="790px" height="450px" autobuffer="autobuffer"  loop="loop" controls="controls">
+                                                    <source src="<?= get_sub_field('file', $audio_video); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                                </video>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
 

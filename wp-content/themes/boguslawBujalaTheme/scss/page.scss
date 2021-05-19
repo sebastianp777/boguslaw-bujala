@@ -12,6 +12,12 @@
           margin-bottom: 20px;
           font-size: 26px;
           position: relative;
+          a{
+            color: #fff;
+            &:hover{
+              color:#000;
+            }
+          }
           @media (max-width:1600px){
             font-size: 22px;
           }
@@ -99,5 +105,27 @@
         }
       }
     }
+  }
+  .hero-section__bg__h2{
+    @include media-minw-992{
+      display: none;
+    }
+    @include media-maxw-991{
+      margin-bottom: 20px;
+    }
+    text-transform: uppercase;
+  }
+}
+.page-template-template-audio-video{
+  .hero-section__bg__h2{
+    @include media-minw-992{
+      display: none;
+    }
+    @include media-maxw-991{
+      margin-top: -50px;
+      margin-bottom: 50px;
+      color: #000;
+    }
+    text-transform: uppercase;
   }
 }
