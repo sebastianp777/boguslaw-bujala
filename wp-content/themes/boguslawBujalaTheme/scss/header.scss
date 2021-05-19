@@ -115,6 +115,13 @@
                                 }
                             }
                         }
+                        &.current-menu-item{
+                            &:not(.sub-menu){
+                                &:after{
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
                     }
                  }
             }

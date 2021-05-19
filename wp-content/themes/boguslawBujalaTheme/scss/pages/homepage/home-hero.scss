@@ -1,6 +1,6 @@
 .hero-section {
     position: relative;
-    height: 1385px;
+    height: 1100px;
     display: flex;
     align-items: center;
     @include media-maxw-991{
@@ -12,7 +12,7 @@
     &__bg{
       position: relative;
       width: 100%;
-      height: 1385px;
+      height: 1100px;
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: cover;
@@ -92,6 +92,40 @@
             margin-top: 30px;
           }
         }
+      }
+    }
+  }
+  .home{
+    .hero-section {
+      height: 950px;
+      @include media-maxw-991{
+        height: 580px;
+      }
+      @include media-maxw-767{
+        height: 669px;
+      }
+      &__bg{
+        height: 950px;
+        @include media-maxw-991{
+          height: 580px;
+        }
+        @include media-maxw-767{
+          height: 669px;
+        }
+      }
+    }
+  }
+  .page-id-28{
+    .hero-section {
+      height: 1150px;
+      @include media-maxw-991{
+        height: 580px;
+      }
+      &__bg{
+        height: 1150px;
+      }
+      &--text-div{
+        top: 32% !important;
       }
     }
   }

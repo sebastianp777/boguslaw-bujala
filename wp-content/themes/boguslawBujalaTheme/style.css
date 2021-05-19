@@ -979,6 +979,8 @@ h1, h2, h3, h4, h5, h6 {
               transition: transform 0.5s ease-in-out; }
           .header .nav__wrapper .nav__menu .menu-list .menu-item:hover:not(.sub-menu):after {
             transform: translateX(0); }
+          .header .nav__wrapper .nav__menu .menu-list .menu-item.current-menu-item:not(.sub-menu):after {
+            transform: translateX(0); }
       .header .nav__wrapper__br {
         width: 100%;
         max-width: 650px;
@@ -1272,7 +1274,7 @@ h1, h2, h3, h4, h5, h6 {
             font-size: 40vw; } }
 
 .hero-section--global .hero-section--text-div {
-  top: 32% !important; }
+  top: 36% !important; }
   @media only screen and (max-width: 767px) {
     .hero-section--global .hero-section--text-div {
       top: 15% !important; } }
@@ -1384,7 +1386,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-section {
   position: relative;
-  height: 1385px;
+  height: 1100px;
   display: flex;
   align-items: center; }
   @media only screen and (max-width: 991px) {
@@ -1396,7 +1398,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-section__bg {
     position: relative;
     width: 100%;
-    height: 1385px;
+    height: 1100px;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -1472,6 +1474,33 @@ h1, h2, h3, h4, h5, h6 {
         @media only screen and (max-width: 767px) {
           .hero-section__bg .hero-section--text-div span {
             margin-top: 30px; } }
+
+.home .hero-section {
+  height: 950px; }
+  @media only screen and (max-width: 991px) {
+    .home .hero-section {
+      height: 580px; } }
+  @media only screen and (max-width: 767px) {
+    .home .hero-section {
+      height: 669px; } }
+  .home .hero-section__bg {
+    height: 950px; }
+    @media only screen and (max-width: 991px) {
+      .home .hero-section__bg {
+        height: 580px; } }
+    @media only screen and (max-width: 767px) {
+      .home .hero-section__bg {
+        height: 669px; } }
+
+.page-id-28 .hero-section {
+  height: 1150px; }
+  @media only screen and (max-width: 991px) {
+    .page-id-28 .hero-section {
+      height: 580px; } }
+  .page-id-28 .hero-section__bg {
+    height: 1150px; }
+  .page-id-28 .hero-section--text-div {
+    top: 32% !important; }
 
 .homepage__publications {
   padding: 100px 0;
@@ -1580,6 +1609,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 15px;
         max-width: 290px;
         line-height: 20px; } }
+    .homepage__other__inner__div p:last-child {
+      font-style: italic; }
   @media only screen and (max-width: 767px) {
     .homepage__other__inner__div h6 {
       text-align: right;
@@ -1741,7 +1772,8 @@ h1, h2, h3, h4, h5, h6 {
           line-height: 46px;
           text-align: right;
           display: block;
-          color: #707070; }
+          color: #707070;
+          font-style: italic; }
           @media only screen and (max-width: 1199px) {
             .homepage__love__inner__div .text-inner h6 {
               font-size: 20px;
@@ -1913,9 +1945,11 @@ h1, h2, h3, h4, h5, h6 {
         .homepage__corpse .text-inner p, .homepage__corpse .text-inner h6 {
           font-size: 15px;
           line-height: 20px; } }
-    @media only screen and (max-width: 767px) {
-      .homepage__corpse .text-inner h6 {
-        text-align: right; } }
+    .homepage__corpse .text-inner h6 {
+      font-style: italic; }
+      @media only screen and (max-width: 767px) {
+        .homepage__corpse .text-inner h6 {
+          text-align: right; } }
   @media only screen and (max-width: 991px) {
     .homepage__corpse a {
       font-size: 15px;
@@ -2696,7 +2730,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 991px) {
   .page-template-template-reviews .hero-section__bg {
-    height: 628px; }
+    height: 653px; }
   .page-template-template-reviews .hero-section--text-div {
     top: 41% !important; } }
 @media only screen and (max-width: 767px) {
