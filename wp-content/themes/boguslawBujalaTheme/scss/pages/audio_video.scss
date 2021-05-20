@@ -121,7 +121,7 @@
         }
       }
     }
-    &:nth-child(odd){
+    &:nth-child(even){
       .video__div__description{
         background: rgba(113, 109, 119, 0.9);
         padding-right: 90px;
@@ -174,7 +174,7 @@
       }
     }
 
-    &:nth-child(2n+2){
+    &:nth-child(odd){
       flex-direction: row-reverse;
       .video__div__description{
         background: #DEDEDE;

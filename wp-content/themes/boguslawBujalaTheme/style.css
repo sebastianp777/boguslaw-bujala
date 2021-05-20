@@ -2197,83 +2197,83 @@ h1, h2, h3, h4, h5, h6 {
         .audio-video__section .video__div__description P {
           font-size: 15px;
           line-height: 20px; } }
-  .audio-video__section .video__div:nth-child(odd) .video__div__description {
+  .audio-video__section .video__div:nth-child(even) .video__div__description {
     background: rgba(113, 109, 119, 0.9);
     padding-right: 90px;
     justify-content: flex-end; }
-    .audio-video__section .video__div:nth-child(odd) .video__div__description .btn {
+    .audio-video__section .video__div:nth-child(even) .video__div__description .btn {
       float: right; }
       @media only screen and (max-width: 1199px) {
-        .audio-video__section .video__div:nth-child(odd) .video__div__description .btn {
+        .audio-video__section .video__div:nth-child(even) .video__div__description .btn {
           font-size: 16px;
           padding: 10px 30px; } }
       @media only screen and (max-width: 991px) {
-        .audio-video__section .video__div:nth-child(odd) .video__div__description .btn {
+        .audio-video__section .video__div:nth-child(even) .video__div__description .btn {
           font-size: 14px;
           padding: 5px 10px; } }
       @media only screen and (max-width: 767px) {
-        .audio-video__section .video__div:nth-child(odd) .video__div__description .btn {
+        .audio-video__section .video__div:nth-child(even) .video__div__description .btn {
           float: none;
           font-size: 10px;
           padding: 4px 9px; } }
     @media only screen and (max-width: 767px) {
-      .audio-video__section .video__div:nth-child(odd) .video__div__description .video-description p {
+      .audio-video__section .video__div:nth-child(even) .video__div__description .video-description p {
         text-align: center;
         max-width: 200px;
         margin-bottom: 5px; }
-        .audio-video__section .video__div:nth-child(odd) .video__div__description .video-description p br {
+        .audio-video__section .video__div:nth-child(even) .video__div__description .video-description p br {
           display: none; } }
-    .audio-video__section .video__div:nth-child(odd) .video__div__description p {
+    .audio-video__section .video__div:nth-child(even) .video__div__description p {
       color: #fff;
       text-align: right; }
     @media only screen and (max-width: 991px) {
-      .audio-video__section .video__div:nth-child(odd) .video__div__description {
+      .audio-video__section .video__div:nth-child(even) .video__div__description {
         padding-right: 50px; } }
     @media only screen and (max-width: 767px) {
-      .audio-video__section .video__div:nth-child(odd) .video__div__description {
+      .audio-video__section .video__div:nth-child(even) .video__div__description {
         padding: 0;
         justify-content: center; } }
   @media (max-width: 1700px) {
-    .audio-video__section .video__div:nth-child(odd) {
+    .audio-video__section .video__div:nth-child(even) {
       padding-right: 160px; } }
   @media only screen and (max-width: 767px) {
-    .audio-video__section .video__div:nth-child(odd) {
+    .audio-video__section .video__div:nth-child(even) {
       padding: 0; } }
-  .audio-video__section .video__div:nth-child(2n+2) {
+  .audio-video__section .video__div:nth-child(odd) {
     flex-direction: row-reverse; }
-    .audio-video__section .video__div:nth-child(2n+2) .video__div__description {
+    .audio-video__section .video__div:nth-child(odd) .video__div__description {
       background: #DEDEDE;
       padding-left: 90px;
       justify-content: flex-start; }
-      .audio-video__section .video__div:nth-child(2n+2) .video__div__description p {
+      .audio-video__section .video__div:nth-child(odd) .video__div__description p {
         color: #707070;
         text-align: left; }
     @media only screen and (max-width: 767px) {
-      .audio-video__section .video__div:nth-child(2n+2) .video-description p {
+      .audio-video__section .video__div:nth-child(odd) .video-description p {
         text-align: center;
         max-width: 200px; }
-        .audio-video__section .video__div:nth-child(2n+2) .video-description p br {
+        .audio-video__section .video__div:nth-child(odd) .video-description p br {
           display: none; } }
     @media only screen and (max-width: 1199px) {
-      .audio-video__section .video__div:nth-child(2n+2) .btn {
+      .audio-video__section .video__div:nth-child(odd) .btn {
         font-size: 16px;
         padding: 10px 30px; } }
     @media only screen and (max-width: 991px) {
-      .audio-video__section .video__div:nth-child(2n+2) .btn {
+      .audio-video__section .video__div:nth-child(odd) .btn {
         font-size: 14px;
         padding: 5px 10px; } }
     @media only screen and (max-width: 767px) {
-      .audio-video__section .video__div:nth-child(2n+2) .btn {
+      .audio-video__section .video__div:nth-child(odd) .btn {
         padding: 4px 9px;
         font-size: 10px; } }
     @media (max-width: 1700px) {
-      .audio-video__section .video__div:nth-child(2n+2) {
+      .audio-video__section .video__div:nth-child(odd) {
         padding-left: 160px; } }
     @media only screen and (max-width: 991px) {
-      .audio-video__section .video__div:nth-child(2n+2) {
+      .audio-video__section .video__div:nth-child(odd) {
         padding-left: 50px; } }
     @media only screen and (max-width: 767px) {
-      .audio-video__section .video__div:nth-child(2n+2) {
+      .audio-video__section .video__div:nth-child(odd) {
         flex-direction: column;
         padding: 0; } }
   @media only screen and (max-width: 767px) {
