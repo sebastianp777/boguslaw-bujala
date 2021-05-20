@@ -29,7 +29,7 @@ $getReview = get_posts(array(
                                         <?php the_field('reviews_text', $getReview); ?>
                                     </div>
                                      <?php if(get_field('reviews_read_the_review', $getReview)): ?>
-                                        <a class="btn read-more desktop-inline" data-id="<?= $getReview->ID ?>">Przeczytaj Recenzję</a>
+                                        <a href="#<?= $getReview->ID ?>" class="btn read-more desktop-inline" data-id="<?= $getReview->ID ?>">Przeczytaj Recenzję</a>
                                     <?php endif;?>
                                     <?php if(get_field('reviews_read_the_review', $getReview)): ?>
                                         <a class="btn read-more mobile--spec" data-id="<?= $getReview->ID ?>">Więcej</a>

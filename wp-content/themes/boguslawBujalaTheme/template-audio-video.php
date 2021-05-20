@@ -45,7 +45,7 @@ if ( $audio_video_heroimage ) :
                                             <?php endif; ?>
 
                                             <?php if ( get_sub_field( 'file', $audio_video ) ) : ?>
-                                                <video width="790px" height="450px" autobuffer="autobuffer"  loop="loop" controls="controls">
+                                                <video width="790px" height="450px" autobuffer="autobuffer"  loop="loop" controls="controls" poster="<?php echo get_template_directory_uri(); ?>/img/screen-video.png">
                                                     <source src="<?= get_sub_field('file', $audio_video); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                                                 </video>
                                             <?php endif; ?>

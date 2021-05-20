@@ -503,17 +503,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #4a4a4a; }
 .poezja article h2, .proza article h2 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 58px;
   font-weight: bold;
   padding: 2rem 0;
   justify-content: flex-end; }
   @media only screen and (max-width: 1650px) {
     .poezja article h2, .proza article h2 {
-      font-size: 31px; } }
+      font-size: 45px; } }
   @media only screen and (max-width: 1440px) {
     .poezja article h2, .proza article h2 {
-      font-size: 28px; } }
+      margin-bottom: 20px; } }
   @media only screen and (max-width: 991px) {
     .poezja article h2, .proza article h2 {
       font-size: 25px;
@@ -2114,7 +2114,8 @@ h1, h2, h3, h4, h5, h6 {
     .audio-video__section .video__div {
       margin-bottom: 50px; } }
   .audio-video__section .video__div .embed-container {
-    height: 450px; }
+    height: 450px;
+    position: relative; }
     @media only screen and (max-width: 1199px) {
       .audio-video__section .video__div .embed-container {
         height: 350px; } }
@@ -2129,7 +2130,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 150px; } }
     .audio-video__section .video__div .embed-container iframe, .audio-video__section .video__div .embed-container video {
       width: 790px;
-      height: 450px; }
+      height: 450px;
+      object-fit: cover; }
       @media only screen and (min-width: 992px) and (max-width: 1440px) {
         .audio-video__section .video__div .embed-container iframe, .audio-video__section .video__div .embed-container video {
           width: 600px; } }
@@ -2182,7 +2184,8 @@ h1, h2, h3, h4, h5, h6 {
     .audio-video__section .video__div__description P {
       font-size: 40px;
       font-weight: 600;
-      line-height: 53px; }
+      line-height: 53px;
+      text-transform: uppercase; }
       @media (max-width: 1600px) {
         .audio-video__section .video__div__description P {
           font-size: 34px; } }
@@ -2409,6 +2412,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 40px 80px;
   font-size: 40px;
   line-height: 45px;
+  font-weight: bold;
   text-transform: uppercase; }
   @media (max-width: 1600px) {
     .audio-video__section .audio-video__section__gallery h2 {
@@ -2454,7 +2458,8 @@ h1, h2, h3, h4, h5, h6 {
         color: #fff;
         font-size: 40px;
         font-weight: 600;
-        margin-bottom: 60px; }
+        margin-bottom: 60px;
+        text-transform: uppercase; }
         @media (max-width: 1600px) {
           .review__section__inner__div__text h2 {
             font-size: 34px; } }
@@ -2686,6 +2691,8 @@ h1, h2, h3, h4, h5, h6 {
       .review__section__inner .full-information--text p {
         font-size: 26px;
         line-height: 36px; }
+        .review__section__inner .full-information--text p strong {
+          text-transform: uppercase; }
         @media (max-width: 1600px) {
           .review__section__inner .full-information--text p {
             font-size: 24px; } }

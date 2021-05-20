@@ -30,6 +30,7 @@
           font-size: 40px;
           font-weight: 600;
           margin-bottom: 60px;
+          text-transform: uppercase;
           @media (max-width:1600px){
             font-size: 34px;
           }
@@ -321,6 +322,9 @@
         p{
           font-size: 26px;
           line-height: 36px;
+          strong{
+            text-transform: uppercase;
+          }
           @media (max-width:1600px){
             font-size: 24px;
           }
